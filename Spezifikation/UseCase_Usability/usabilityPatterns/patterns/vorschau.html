@@ -1,0 +1,308 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Vorschau</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Vorschau</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Vorschau</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Preview</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten vor Ausführung einer irreversiblen oder langdauernden Aktion wissen,
+                  		welche Resultate die Aktion haben wird.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Biete Benutzern eine Vorschau auf die voraussichtlichen Resultate der Aktion, ohne
+                        die
+                        				Aktion vollständig auszuführen oder Änderungen durchzuführen.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Zeige vor allem in solchen Fällen eine Vorschau auf die Resultate einer Aktion, wenn
+                     die
+                     			Ausführung der Aktion lange dauert oder Benutzer die Aktion nicht oder nur mit
+                     größerem Aufwand
+                     			rückgängig machen können. Benutzer können mit Hilfe der Vorschau beurteilen, ob
+                     die Ausführung
+                     			der Aktion die von ihnen erwarteten Resultate bringt.
+                     		
+                  </p>
+                  		
+                  <p>Wenn die Resultate der Aktion vorab nicht genau bekannt sind (z.&nbsp;B. bei komplexen
+                     Berechnungen)
+                     			oder sehr umfangreich sind (z.&nbsp;B. bei der Verarbeitung großer Datenmengen), kann
+                     als Vorschau
+                     			eine Abschätzung oder ein Auszug der tatsächlichen späteren Resultate angezeigt
+                     werden.
+                     		
+                  </p>
+                  		
+                  <p>Erlaube Benutzern in jedem Fall, die Ausführung der Aktion nach Anzeige der Vorschau
+                     			abzubrechen, wenn sie mit den voraussichtlichen Ergebnissen nicht zufrieden sind.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>Ein Tabellenkalkulationsprogramm erlaubt Benutzern den Import von Daten aus Text-
+                  und
+                  		CSV-Dateien (comma-separated values). Jede Zeile in diesen Dateien wird dabei als
+                  einzelner
+                  		Datensatz interpretiert, der aus mehreren, durch ein oder mehrere Trennzeichen (z.&nbsp;B.
+                  Leerzeichen,
+                  		Komma, Semikolon oder Tabulator) getrennten Datenfeldern besteht. Häufig ist jedoch
+                  unklar, welche
+                  		Trennzeichen in einer bestimmten Datei verwendet wurden. Im Import-Dialog zeigt
+                  das System deshalb
+                  		zunächst einen Ausschnitt der zu importierenden Datei an und bietet Benutzern dabei
+                  eine Vorschau,
+                  		wie die Daten mit den aktuellen Trennzeichen-Einstellungen importiert würden. Die
+                  Benutzer können
+                  		im Dialog die beim Import zu beachtenden Trennzeichen auswählen und direkt erkennen,
+                  ob diese
+                  		Einstellungen den korrekten Import der Daten erlauben.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Microsoft Excel 2008 für Mac: Funktion „Importieren“</em></p>
+                  <p>Im Import-Dialog von Excel können Benutzer beim Import von CSV-Dateien die zu
+                     			berücksichtigenden Trennzeichen auswählen. Excel zeigt dabei direkt eine Vorschau,
+                     wie die
+                     			Datenfelder mit den gewählten Einstellungen importiert werden würden (im Bild:
+                     			Semikolon-getrennte Datenfelder in der CSV-Datei werden in separaten Spalten angezeigt).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/vorschau-excel.png" title="Vorschau der zu importierenden Daten in Excel"><img src="../img/vorschau-excel.png" width="100%" alt="Vorschau der zu importierenden Daten in Excel"></img></a><br></br>Vorschau der zu importierenden Daten in Excel
+                  </div><br style="clear:both;"></br><p><em>Eclipse Java IDE: Vorschau von Refactoring-Auswirkungen</em></p>
+                  <p>Die Entwicklungsumgebung Eclipse unterstützt einfache Refactoring-Operationen für
+                     			Java-Quellcode. Dabei zeigt Eclipse Benutzern vor dem Refactoring eine Vorschau
+                     auf die
+                     			vorzunehmenden Änderungen an (im Bild: Quellcode-Veränderungen bei Verschiebung
+                     eines
+                     			Code-Abschnitts in eine eigene separate Methode). In der Vorschau zeigt Eclipse
+                     sowohl eine
+                     			hierarchische Ansicht der vom Refactoring betroffenen Java-Klassen und -Methoden
+                     (im Bild: oben)
+                     			als auch die Detailansicht des Quellcodes (im Bild: unten).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/vorschau-eclipse.png" title="Vorschau der Refactoring-Operationen in Eclipse"><img src="../img/vorschau-eclipse.png" width="100%" alt="Vorschau der Refactoring-Operationen in Eclipse"></img></a><br></br>Vorschau der Refactoring-Operationen in Eclipse
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Aktionen, deren vollständige Ausführung längere Zeit dauert</li>
+                     			
+                     <li>Aktionen, die von Benutzern nicht oder nur mit größerem Aufwand rückgängig gemacht
+                        werden
+                        				können
+                        			
+                     </li>
+                     			
+                     <li>Nutzungssituationen, in denen Benutzer die Resultate einer Aktion nicht abschätzen
+                        können und
+                        				unsicher sind, ob die Aktion die gewünschten Resultate liefert
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Eine Vorschau auf die voraussichtlichen Resultate einer Aktion nimmt Benutzern die
+                  		Furcht vor einer Fehlbedienung des Systems und erhöht so die Zufriedenheit bei der
+                  Benutzung.
+                  		Zudem genügt Benutzern in vielen Fällen eine Vorschau, um abzuschätzen, ob die Aktion
+                  die
+                  		gewünschten Resultate bringt. Irrtümliche oder fehlerhafte Ausführungen der Aktion,
+                  etwa mit
+                  		falschen Eingabewerten, werden auf diese Weise vermieden, die Effizienz der Benutzung
+                  steigt.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Das System sollte eine Vorschau nur dann automatisch anzeigen, wenn die Vorschau schnell
+                     			erstellt werden kann, und ansonsten die Vorschau nur auf Wunsch des Benutzers anzeigen.
+                     			Andernfalls behindert die Vorschau u.&nbsp;U. Benutzer bei der Arbeit mit dem System.
+                     Expertennutzer,
+                     			die die Resultate von Aktionen in der Regel kennen, sollten bei häufig ausgeführten
+                     Aktionen ggf.
+                     			die Möglichkeit haben, auf die Vorschau zu verzichten.
+                     		
+                  </p>
+                  		
+                  <p>Die Vorschau auf die voraussichtlichen Resultate der Aktion muss hinreichend genau
+                     und
+                     			aussagekräftig sein, um Benutzern die Entscheidung über die weitere Ausführung
+                     der Aktion zu
+                     			erlauben. Wenn keine für Benutzer hilfreiche Vorschau möglich ist, sollte darauf
+                     verzichtet
+                     			werden.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Benutzer sollten die Möglichkeit haben, die Aktion abzubrechen, wenn bereits die
+                     			Vorschau nicht die gewünschten Resultate erwarten lässt.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="verarbeitungsanzeige.html">Verarbeitungsanzeige</a></strong></p>
+                  <p>
+                     			In vielen Fällen benötigt bereits die Erstellung der Vorschau längere Zeit. Benutzer
+                     können
+                     			darüber mit einer Verarbeitungsanzeige oder einer
+                     			<a href="fortschrittsanzeige.html">Fortschrittsanzeige</a>
+                     			informiert werden.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, deren Ausführung lange dauert, die von Benutzern nicht oder
+                     nur mit
+                     			größerem Aufwand rückgängig gemacht werden oder bei denen die Resultate von Benutzern
+                     nicht
+                     			abgeschätzt werden können.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Für welche dieser Aktionen können die Resultate vorab bestimmt, abgeschätzt oder auszugsweise
+                        				ermittelt werden?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Vorschau
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung der Vorschau. Nur sinnvoll, wenn für
+                              				verschiedene Aktionen jeweils eine ähnliche Vorschau (z. B. auf Resultate desselben
+                              Typs)
+                              				angeboten wird.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Vorschau
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Vorschau</span><br></br><div class="spec-template-description">Das System soll dem Benutzer eine Vorschau auf das Resultat des Ablaufs zeigen.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Inhalt der Vorschau</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe von Inhalt und Darstellung der Vorschau</div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Listenansicht der Datensätze, die (bei der Aktion „Alte Daten löschen“) voraussichtlich
+                                 					gelöscht werden.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Schritt
+                                 				</span><span class="spec-template-name">Anzeige und Bestätigung der Vorschau</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Schritte, in denen das System die Vorschau anzeigt und der Benutzer die weitere
+                                 					Ausführung des Ablaufs bestätigt.
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.315+02:00
+      </div>
+   </body>
+</html>

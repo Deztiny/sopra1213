@@ -1,0 +1,210 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Sicherheitskopie</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Sicherheitskopie</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Sicherheitskopie</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten auf die vorherige Fassung eines Dokuments zurückgreifen, wenn sie
+                  die
+                  		aktuelle Fassung versehentlich oder irrtümlich gespeichert haben.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Erstelle beim Speichern des Dokuments eine Sicherheitskopie der vorherigen Fassung.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Die Sicherheitskopie repräsentiert eine frühere Fassung des Dokuments. Erlaube Benutzern,
+                     auf
+                     			diese Sicherheitskopie zurückzugreifen, wenn sie feststellen, dass sie aktuelle
+                     Fassung des
+                     			Dokuments versehentlich oder irrtümlich gespeichert haben.
+                     		
+                  </p>
+                  		
+                  <p>Sicherheitskopien stellen eine einfache Art der Versionierung von Dokumenten dar.
+                     Für jedes
+                     			Dokument können eine oder ggf. auch mehrere frühere Fassungen als Sicherheitskopie
+                     gespeichert
+                     			werden. Achte dabei aber darauf, dass die Zahl gespeicherter Sicherheitskopien
+                     nicht zu groß
+                     			wird, damit nicht unnötig viel Speicherplatz benötigt wird.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Visual Paradigm for UML 8.1</em></p>
+                  <p>Das UML-Modellierungswerkzeug Visual Paradigm legt beim Speichern eines Dokuments
+                     			automatisch eine Sicherheitskopie der vorherigen Fassung des Dokuments an. Die
+                     Sicherheitskopie
+                     			wird unter dem Dateinamen des Dokuments, ergänzt um die Endung „.bak“, im gleichen
+                     Verzeichnis
+                     			wie das aktuelle Dokument gespeichert.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/sicherheitskopie-visualparadigm.png" title="Von Visual Paradigm angelegte Sicherheitskopie mit Dateiendung .bak"><img src="../img/sicherheitskopie-visualparadigm.png" width="100%" alt="Sicherheitskopie mit Endung .bak"></img></a><br></br>Sicherheitskopie mit Endung .bak
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Dokument-/Dateizentrierte Anwendungen (z.B. Textverarbeitung, Bildbearbeitung)</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Sicherheitskopien früherer Versionen von Dokumenten erleichtern die Fehlerbehebung:
+                     Wenn
+                     			Benutzer Dokumente versehentlich speichern, können frühere Versionen mit geringem
+                     Aufwand
+                     			wiederhergestellt werden. Dies erhöht das Vertrauen der Benutzer in die Arbeit
+                     mit dem System.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Unverträglichkeit
+                        						</span>
+                     			&nbsp;<strong><a href="autosave.html">Automatisches Speichern</a></strong></p>
+                  <p>Sicherheitskopien eignen sich für dateibasierte Dokumente, bei denen ein
+                     			automatisches Speichern nicht sinnvoll ist. Eine Kombination beider Lösungen erscheint
+                     nicht
+                     			angemessen, da für Benutzer nicht unterscheidbar ist, ob Sicherheitskopien auf
+                     ihren expliziten
+                     			Wunsch hin oder automatisch erstellt wurden.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Kläre, ob eine Sicherheitskopie beim Speichern eines Dokuments angelegt werden soll.</p>
+                  		
+                  <p>Lege fest, wieviele Fassungen des Dokuments als Sicherheitskopien gespeichert werden
+                     sollen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Sicherheitskopie
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Strategie</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Speicherstrategie: Festlegung, wie und zu welchem Zeitpunkt bzw. in
+                              				welchen Situationen das System Sicherheitskopien von Dokumenten anlegen (und ggf.
+                              automatisch
+                              				löschen) soll.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Das System speichert genau eine letzte Fassung des Dokuments als Sicherheitskopie.
+                              Das
+                              				System erzeugt die Sicherheitskopie immer dann, wenn Benutzer beim Speichern ein
+                              vorhandenes
+                              				Dokument überschreiben möchten.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Daten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Festlegung der Arten von Daten/Dokumenten, von denen eine Sicherheitskopie anlegen
+                              				werden soll
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Alle Textdokumente
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Sicherheitskopie
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Sicherheitskopie</span><br></br><div class="spec-template-description">Das System soll nach diesem Schritt automatisch eine Sicherheitskopie anlegen.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.267+02:00
+      </div>
+   </body>
+</html>

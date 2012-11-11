@@ -1,0 +1,225 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Systemstatus</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Systemstatus</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Systemstatus</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten den aktuellen Status des Systems erkennen können.</td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Stelle den aktuellen Status des Systems konsistent und leicht erkennbar dar.</strong>
+                     		
+                  </p>
+                  		
+                  <p> Der Systemstatus sollte Benutzer zum Beispiel über den momentanen Zustand des Systems,
+                     den
+                     			aktiven Benutzungsmodus oder aktive Einstellungen informieren. Die dargestellten
+                     Informationen
+                     			sollten dabei für Benutzer bei der Erledigung ihrer Aufgaben relevant sein.
+                     		
+                  </p>
+                  		
+                  <p>Der Status sollte so dargestellt werden, dass er für Benutzer leicht erkennbar und
+                     verständlich
+                     			ist. Es bietet sich an, den Status stets an derselben Position in der Benutzungsschnittstelle
+                     			anzuzeigen, um Benutzern die Orientierung zu erleichtern.
+                     		
+                  </p>
+                  		
+                  <p>Änderungen des Systemstatus müssen unmittelbar dargestellt werden. Benutzer können
+                     auf
+                     			Änderungen durch dezente Animationen oder Hervorhebungen aufmerksam gemacht werden
+                     (etwa ein
+                     			kurzes Aufleuchten der aktualisierten Zustandsdarstellung).
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Parallels Desktop: Statusanzeige für virtualisierte Hardware</em></p>
+                  <p>Die Virtualisierungslösung Parallels Desktop zeigt in einer Statusleiste an, welche
+                     			virtualisierten Geräte dem Gastsystem aktuell zur Verfügung gestellt werden. Deaktivierte
+                     Geräte
+                     			werden mit einem kleinen X gekennzeichnet. Benutzer können so jederzeit einen Überblick
+                     über die
+                     			Konfiguration der virtuellen Hardware erhalten.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/status-parallels.png" title="Parallels Desktop: Statusanzeige für virtualisierte Hardware"><img src="../img/status-parallels.png" width="100%" alt="Status virtualisierter Hardware in Parallels Desktop"></img></a><br></br>Status virtualisierter Hardware in Parallels Desktop
+                  </div><br style="clear:both;"></br><p><em>Microsoft Word 2011 für Mac: Statusleiste</em></p>
+                  <p>Microsoft Word zeigt Benutzern in einer Statusleiste am unteren Fensterrand
+                     			verschiedene Informationen an. Dazu gehören der aktuelle Ansichtsmodus (im Beispiel:
+                     			Drucklayoutansicht), Informationen zum Dokument (Seitennummer und -anzahl), der
+                     Status der
+                     			Rechtschreibprüfung (im Beispiel: grünes Häkchen, keine Fehler gefunden) und die
+                     aktuelle
+                     			Zoomstufe (im Beispiel: 150%). Diese Statusinformationen werden permanent angezeigt.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/status-word.png" title="Microsoft Word: Statusleiste mit Informationen zur aktuellen Ansicht, zum aktiven Dokument und zum Status der Rechtschreibprüfung"><img src="../img/status-word.png" width="100%" alt="Statusleiste in Microsoft Word"></img></a><br></br>Statusleiste in Microsoft Word
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Systeme, die verschiedene Benutzungs- oder Betriebsmodi besitzen</li>
+                     			
+                     <li>Systeme, bei denen bestimmte Einstellungen die Benutzung so beeinflussen, dass Benutzer
+                        an
+                        				prominenter Stelle darüber informiert werden sollten
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Eine aufgabenangemessen gestaltete Benutzungsoberfläche sollte nur Informationen darstellen,
+                     			die für Benutzer tatsächlich bei der Arbeit mit dem System von Interesse sind.
+                     Wenig relevante
+                     			Statusangaben oder rein technische Formulierungen verwirren Benutzer mehr, als
+                     dass sie sie
+                     			unterstützen. Der Systemstatus sollte deshalb nur dargestellt werden, wenn die
+                     Darstellung für
+                     			Benutzer hilfreich ist.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p></p>
+                  		
+                  <p>Identifiziere Benutzungs- oder Betriebsmodi des Systems.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche Informationen über den aktuellen Systemzustand für Benutzer so wichtig sind,
+                        dass sie
+                        				eine permanente Darstellung rechtfertigen.
+                        			
+                     </li>
+                     			
+                     <li>Wie kann der Systemzustand angemessen dargestellt werden?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Systemstatus
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Statusinformationen</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe des Inhalts der Statusanzeige.</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					 Aktueller Bedienmodus (Normal oder Experte), Anzahl Datensätze im System, Status
+                              der
+                              				Verbindung zur Datenbank (verbunden oder nicht verbunden oder Fehler)
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der einheitlichen Darstellung des Systemstatus auf der Benutzungsoberfläche.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Der Systemstatus soll in einer Statuszeile am unteren Rand des Anwendungsfensters
+                              				dargestellt werden.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Systemstatus
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Statusaktualisierung</span><br></br><div class="spec-template-description">Das System soll nach diesem Schritt den Systemstatus aktualisieren.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Status</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Festlegung des anzuzeigenden bzw. zu aktualisierenden Systemstatus</div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Mit Datenbank verbunden.
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Architekturentwurf</th>
+               <td></td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.296+02:00
+      </div>
+   </body>
+</html>

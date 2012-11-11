@@ -1,0 +1,328 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Warnung</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Warnung</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Warnung</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten vermeiden, Aktionen irrtümlich oder versehentlich auszuführen, wenn
+                  sie
+                  		diese Aktionen nicht einfach rückgängig machen können und die Ausführung z.&nbsp;B. Daten-
+                  oder
+                  		Zeitverlust zur Folge hat.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Warne Benutzer vor der Ausführung irreversibler Aktionen.</strong>
+                     		
+                  </p>
+                  		
+                  <p> Weise auf die Konsequenzen der Ausführung hin und darauf, dass die Aktionen nicht
+                     rückgängig
+                     			gemacht werden kann.
+                     		
+                  </p>
+                  		
+                  <p>Lass Benutzer die Ausführung explizit bestätigen und biete auch die Möglichkeit zum
+                     Abbruch.
+                     			Dabei sollte bei der Art der erforderlichen Bestätigung die Schwere möglicher Konsequenzen
+                     			berücksichtigt werden.
+                     		
+                  </p>
+                  		
+                  <p>Biete Benutzern ggf. die Möglichkeit, vor der Ausführung der Aktionen zunächst andere
+                     Aktionen
+                     			auszuführen, wenn dadurch irreversible Konsequenzen vermieden werden können, z.&nbsp;B.
+                     durch
+                     			Speichern von Daten vor dem Beenden des Programms.
+                     		
+                  </p>
+                  		
+                  <p>Biete Benutzern ggf. die Möglichkeit, bestimmte Warnungen dauerhaft zu deaktivieren.</p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>In einem Textverarbeitungsprogramm möchte der Benutzer ein ungespeichertes Dokument
+                  		schließen. Das System warnt den Benutzer und weist darauf hin, dass das Dokument
+                  ungespeicherte
+                  		Änderungen enthält, die verloren gehen, wenn der Benutzer fortfährt. Das System
+                  bietet dem
+                  		Benutzer die Möglichkeit, fortzufahren, das Dokument zunächst zu speichern oder
+                  die Aktion
+                  		abzubrechen und zum Dokument zurückzukehren.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Apple Mac OS X: Papierkorb</em></p>
+                  <p>
+                     			Gelöschte Dateien verbleiben unter Mac OS X zunächst im „
+                     			<a href="papierkorb.html">Papierkorb“</a>
+                     			, bis der Benutzer diesen explizit „leert“. Das Entleeren des Papierkorbs ist irreversibel.
+                     Das
+                     			System warnt den Benutzer deshalb ausdrücklich, weist auf die Konsequenz des Aktion
+                     „Papierkorb
+                     			leeren“ hin und fordert eine Bestätigung, bevor die Aktion ausgeführt wird.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/warnung-apple.png" title="Warnung und Sicherheitsabfrage beim Leeren des Papierkorbs in Mac OS X"><img src="../img/warnung-apple.png" width="100%" alt="Warnung und Sicherheitsabfrage beim Leeren des Papierkorbs in Mac OS X"></img></a><br></br>Warnung und Sicherheitsabfrage beim Leeren des Papierkorbs in Mac OS X
+                  </div><br style="clear:both;"></br><p><em>OpenOffice: Warnung bei ungespeicherten Änderungen</em></p>
+                  <p>OpenOffice zeigt eine Warnung an, wenn Benutzer ein Dokument schließen oder das
+                     			Programm beenden möchten und Änderungen an einem geöffnetes Dokument noch nicht
+                     gespeichert
+                     			wurden. Benutzer haben die Möglichkeit, die Änderungen zu verwerfen oder doch noch
+                     zu speichern.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/warnung-openoffice.png" title="Warnung bei ungespeicherten Änderungen in OpenOffice"><img src="../img/warnung-openoffice.png" width="100%" alt="Warnung bei ungespeicherten Änderungen in OpenOffice"></img></a><br></br>Warnung bei ungespeicherten Änderungen in OpenOffice
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Nutzungssituationen, in denen Benutzer nur gelegentlich mit dem System arbeiten und
+                        die
+                        				Konsequenzen, die die Ausführung einer Aktion mit sich bringt, nicht erkennen
+                        können
+                        			
+                     </li>
+                     			
+                     <li>Aktionen, deren Resultate Benutzer nicht oder nur mit erheblichen Aufwand rückgängig
+                        machen
+                        				können
+                        			
+                     </li>
+                     			
+                     <li>Aktionen, die bei irrtümlicher oder fehlerhafter Ausführung schwerwiegende Konsequenzen,
+                        etwa
+                        				den Verlust von Daten, zur Folge haben
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Warnungen dienen der Fehlervermeidung: Das System erlaubt Benutzern, die irrtümliche
+                  		Ausführung von Aktionen und resultierende ungewollte Konsequenzen zu verhindern.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>
+                     			Häufige Warnungen können dazu führen, dass Benutzer die Warnungen nicht mehr ernst
+                     nehmen und die
+                     			Ausführung von Aktionen unbesehen bestätigen. Die Zahl der Warnungen sollte somit
+                     auf das
+                     			notwendige Maß beschränkt werden. Die Möglichkeit, Aktionen rückgängig zu machen
+                     (
+                     			<a href="globalundo.html">Undo</a>
+                     			), sollte gegenüber Warnungen bevorzugt werden.
+                     		
+                  </p>
+                  		
+                  <p>Warnungen unterbrechen den Interaktionsablauf, den Benutzer erwarten. Häufige Warnungen
+                     können
+                     			insbesondere Benutzer, die lange und regelmäßig mit dem System arbeiten, bei der
+                     Arbeit stören.
+                     			Diesen Benutzern muss deshalb ggf. die Möglichkeit gegeben werden, bestimmte Warnung
+                     dauerhaft zu
+                     			deaktivieren (aber bei Bedarf auch wieder zu aktivieren).
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="globalundo.html">Globales Undo</a></strong></p>
+                  <p>
+                     			Das Usability Pattern
+                     			<strong>Globales Undo</strong>
+                     			(Rückgängigmachen ausgeführter Aktionen) erhöht ebenfalls die Fehlertoleranz, ohne
+                     dabei, wie im
+                     			Fall von Warnungen, den von Benutzern erwarteten Interaktionsablauf zu unterbrechen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, die Benutzer nicht oder nur mit erheblichem Aufwand rückgängig
+                     machen
+                     			können.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Bei welchen dieser Aktionen soll eine Warnung angezeigt und eine explizite Bestätigung
+                        der
+                        				Ausführung eingeholt werden?
+                        			
+                     </li>
+                     			
+                     <li>Was soll passieren, wenn der Benutzer die Ausführung abbricht?</li>
+                     			
+                     <li>In welchen Fällen sollen neben Ausführung und Abbruch der Aktion noch Alternativen
+                        angeboten
+                        				werden (z.&nbsp;B. das Speichern von Daten vor dem Beenden des Systems)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p>Überlege, wie die Warnungen gestaltet werden sollen.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Wie sollen Benutzer die Ausführung der Aktion bestätigen oder abbrechen können?</li>
+                     			
+                     <li>Gibt es unterschiedliche Warnungstypen, abhängig von den Konsequenzen der Aktion?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Warnung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung von Warnungen.</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Das System zeigt Warnungen als modale Dialoge an.
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Warnung
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Warnung</span><br></br><div class="spec-template-description">
+                              				Das System soll Benutzer
+                              				<em>vor</em>
+                              				Ausführung dieses Schritts warnen und auffordern, die Ausführung zu bestätigen.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Bedingung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der Bedingung für die Warnung. Das System soll Benutzer nur warnen, wenn die
+                                 					Bedingung erfüllt ist.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Das Dokument enthält ungespeicherte Änderungen.
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Zusätzliche Alternativen</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe zusätzlicher alternativer Wahlmöglichkeiten, die das System dem Benutzer
+                                 					anbieten soll (neben den Möglichkeiten Bestätigung und Abbruch).
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Speichern des Dokuments vor dem Schließen
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Ablauf
+                                 				</span><span class="spec-template-name">Ablauf bei Abbruch</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Alternativer Ablauf, wenn der Benutzer nach Warnung durch das System die weitere
+                                 					Ausführung des bisherigen Ablaufs abbricht. Nur notwendig, wenn der Abbruch zusätzliche
+                                 					Interaktionsschritte verlangt.
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Ablauf
+                                 				</span><span class="spec-template-name">Ablauf bei Alternative</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Alternative Abläufe, wenn der Benutzer vor der weiteren Ausführung des bisherigen
+                                 					Ablaufs noch zusätzliche Aktionen ausführen und so irreversible Konsequenzen
+                                 verhindern möchte.
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.335+02:00
+      </div>
+   </body>
+</html>

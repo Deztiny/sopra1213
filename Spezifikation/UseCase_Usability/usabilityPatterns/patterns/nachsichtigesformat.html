@@ -1,0 +1,241 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Nachsichtiges Format</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Nachsichtiges Format</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Nachsichtiges Format</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Forgiving Format</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten Eingabewerte frei eingeben, ohne sich um das korrekte Format kümmern
+                  zu
+                  		müssen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Akzeptiere Eingaben in verschiedenen Formaten, und interpretiere unvollständige oder
+                        				nicht eindeutige Eingabewerte im Sinne des Benutzers.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Ergänze oder korrigiere dabei unvollständige oder fehlerhafte Eingabewerte so, dass
+                     sie der
+                     			angenommenenen Intention des Benutzers entsprechen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Remember The Milk</em></p>
+                  <p>Die Web-Anwendung Remember The Milk (RTM) zur Aufgabenverwaltung erlaubt Benutzern,
+                     			das Fälligkeitsdatum von Aufgaben in verschiedenen, auch ungewöhnlichen Formaten
+                     einzugeben. Im
+                     			Beispiel gibt ein Benutzer das Datum in natürlicher Sprache als „morgen Mittag“
+                     ein. Das System
+                     			interpretiert diese Eingabe als 12 Uhr des Folgetages.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/nachsichtigesformat-rtm1.png" title="Freie Eingabe eines Datums in Remember The Milk"><img src="../img/nachsichtigesformat-rtm1.png" width="100%" alt="Freie Datumseingabe"></img></a><br></br>Freie Datumseingabe
+                  </div>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/nachsichtigesformat-rtm2.png" title="Sinnvolle Interpretation des Eingabewerts durch Remember The Milk"><img src="../img/nachsichtigesformat-rtm2.png" width="100%" alt="Sinnvolle Interpretation (12 Uhr mittages des Folgetags) durch das System"></img></a><br></br>Sinnvolle Interpretation (12 Uhr mittages des Folgetags) durch das System
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Nutzungssituationen, in denen ungeübte Benutzer mit dem System arbeiten</li>
+                     			
+                     <li>Eingaben, für die verschiedene Formate möglich und sinnvoll sind (z. B. Datums- oder
+                        				Adresseingaben)
+                        			
+                     </li>
+                     			
+                     <li>Eingaben in Formaten, die komplex oder für Benutzer ungewohnt sind</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		Mit der Unterstützung für nachsichtige Eingabeformate passt sich das System an die
+                  Benutzern an –
+                  		und erfordert nicht, dass sich die Benutzer an das System anpassen. Benutzer müssen
+                  sich nicht das
+                  		<em>eine</em>
+                  		zulässige Eingabeformat merken, sondern können Werte in verschiedenen, aus ihrer
+                  Sicht sinnvollen
+                  		Formaten eingeben, auch unvollständig oder sogar fehlerhaft. Das System interpretiert
+                  die Eingaben
+                  		im (vermuteten) Sinne der Benutzer und korrigiert oder ergänzt sie gegebenenfalls.
+                  Das System ist
+                  		fehlertoleranter, für Benutzer wird die Arbeit mit dem System leichter.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td> Die Unterstützung für nachsichtige Eingabeformate birgt das Risiko einer Fehlinterpretation
+                  		der Benutzereingaben durch das System. Korrigiert das System Benutzereingaben mehrfach
+                  falsch,
+                  		werden Benutzer bei ihrer Arbeit mit dem System behindert und können verärgert reagieren.
+                  		Nachsichtige Formate sollten deshalb nur dann unterstützt werden, wenn das System
+                  mit hoher
+                  		Wahrscheinlichkeit den korrekten beabsichtigten Eingabewert erkennen kann (z.B.
+                  bei Datums-,
+                  		Uhrzeit- oder Ortsangaben).
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="direktevalidierung.html">Direkte Validierung</a></strong></p>
+                  <p>Nachsichtiges Format und Direkte Validierung können kombiniert werden. Dabei ist
+                     			jedoch zu beachten, dass das das System bei der Validierung die vom System interpretierten
+                     bzw.
+                     			korrigierten Eingabewerte prüfen muss (nicht die tatsächlichen Eingabewerte der
+                     Benutzer).
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Eingaben, bei denen verschiedene Eingabeformate denkbar sind.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche Eingabeformate können und sollen unterstützt werden?</li>
+                     			
+                     <li>Wie können unvollständige oder fehlerhafte Eingaben interpretiert werden?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Nachsichtiges Format
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Interpretationsregeln</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe der Regeln für die Interpretation von Eingabewerten.</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Wird bei Datumseingaben keine Uhrzeit eingegeben, nimmt das System als Uhrzeit 12:00
+                              an.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung der Hinweise für Benutzer, wenn das System
+                              				Eingabewerte ergänzt oder korrigiert.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Automatisch ergänzte oder korrigierte Eingabewerte sollen im Dialog kurz farblich
+                              				hervorgehoben werden, wenn der Benutzer die Eingabe abgeschlossen hat.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Nachsichtiges Format
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Nachsichtige Eingabe</span><br></br><div class="spec-template-description">Das System soll bei diesem Eingabeschritt des Benutzers verschiedene Eingabeformate
+                              				erlauben und, falls nötig, den Eingabewert im vermuteten Sinne des Benutzers interpretieren.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Eingabeformate</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der zulässigen Eingabeformate und spezielle Vorgaben für die Interpretation
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Numerisches Datum in den Formaten TT.MM.JJJJ und JJJJ.MM.TT, alphanumerisches Datum
+                                 mit
+                                 					ausgeschriebenem Monatsnamen im Format TT. MMMM JJJJ, relative Datums- (gestern,
+                                 heute, morgen)
+                                 					und Zeitangaben (morgen = 8 Uhr, mittag = 12 Uhr, abend = 18 Uhr)
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.223+02:00
+      </div>
+   </body>
+</html>

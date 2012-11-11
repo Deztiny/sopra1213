@@ -1,0 +1,337 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Globales Undo</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Globales Undo</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Globales Undo</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten Aktionen rückgängig machen, die sie versehentlich oder irrtümlich
+                  		ausgeführt haben oder deren Resultate nicht ihren Erwartungen entsprechen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Erlaube Benutzern, ausgeführte Aktionen rückgängig zu machen und den vorigen Zustand
+                        des
+                        				Systems wiederherzustellen.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Lasse Benutzern dabei die Wahl, nur die zuletzt ausgeführte Aktion oder mehrere ausgeführte
+                     			Aktionen auf einmal rückgängig zu machen. Verwende dabei eine einzige Historie
+                     für alle
+                     			ausgeführten Aktionen.
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Verwende eine einheitliche, für die Benutzer nachvollziehbare Undo-Strategie. Aktionen,
+                     die
+                     			dauerhafte Änderungen an Daten bewirken können (z.B. das Hinzufügen, Ändern oder
+                     Löschen von
+                     			Datensätzen), sollten rückgängig gemacht werden können. Bei Aktionen, die lediglich
+                     die
+                     			Darstellung verändern (z.B. das Vergrößern oder Verkleinern der Ansicht), ist dies
+                     zumeist nicht
+                     			nötig. Aktionen, die aus technischen oder konzeptuellen Gründen nicht rückgängig
+                     gemacht werden
+                     			können (z.B. das Ausdrucken eines Dokuments oder das Verschicken einer E-Mail),
+                     sollten für die
+                     			Benutzer erkennbar sein. In manchen Fällen ist eine
+                     			<a href="warnung.html">Warnung</a>
+                     			vor Ausführung der Aktion empfehlenswert.
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Biete Benutzern ebenfalls die Möglichkeit, rückgängig gemachte Aktionen wiederherzustellen
+                     , also
+                     			ein vorheriges Undo zurückzunehmen, wenn keine zwischenzeitlich durchgeführte Aktion
+                     dies
+                     			unmöglich macht. Diese Möglichkeit wird als Redo bezeichnet. Redo ist dabei nicht
+                     zu verwechseln
+                     			mit der
+                     			<a href="wiederholung.html">Wiederholung</a>
+                     			einer neu ausgeführten Aktion.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>In einem Textverarbeitungsprogramm löscht ein Benutzer einen vorhandenen Wert und
+                  		gibt anschließend einen neuen Begriff ein. Mit dem Resultat unzufrieden möchte er
+                  den
+                  		ursprünglichen Text wiederherstellen. Er führt die Aktion Undo für die beiden zuletzt
+                  ausgeführten
+                  		Aktionen (Löschen des ursprünglichen Begriffs, dann Eingabe des neuen Begriffs)
+                  aus, um den
+                  		ursprünglichen Text wiederherzustellen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Mozilla Thunderbird 3.1</em></p>
+                  <p>Das E-Mail-Programm Thunderbird erlaubt Benutzern in vielen Fällen, die zuletzt
+                     			ausgeführte Aktion rückgängig zu machen.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/globalundo-thunderbird.png" title="Undo-Funktion in Thunderbird"><img src="../img/globalundo-thunderbird.png" width="100%" alt="Undo-Funktion in Thunderbird"></img></a><br></br>Undo-Funktion in Thunderbird
+                  </div><br style="clear:both;"></br><p><em>OpenOffice.org Writer 3.2</em></p>
+                  <p>Das Textverarbeitungsprogramm Writer bietet Benutzern die Möglichkeit, mehrere
+                     			ausgeführte Aktionen auf einmal rückgängig zu machen. Die ausgeführten Aktionen
+                     werden dazu als
+                     			Ausklappmenü in Listenform angezeigt; der Benutzer wählt aus, bis zu welcher Aktion
+                     das Programm
+                     			zurückgehen soll (Undo). In gleicher Weise können zurückgenommene Aktionen wiederhergestellt
+                     			werden (Redo).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/globalundo-openoffice.png" title="Historie ausgeführter Aktionen in OpenOffice"><img src="../img/globalundo-openoffice.png" width="100%" alt="Historie ausgeführter Aktionen in OpenOffice"></img></a><br></br>Historie ausgeführter Aktionen in OpenOffice
+                  </div><br style="clear:both;"></br><p><em>Adobe Photoshop</em></p>
+                  <p>Im Bildbearbeitungsprogramm Photoshop können Benutzer eine Historie der zuletzt
+                     			ausgeführten Aktionen einblenden. Innerhalb der Historie können Benutzer Aktionen
+                     rückgängig
+                     			machen (Undo) und auch, wenn zwischenzeitlich keine anderen Aktionen ausgeführt
+                     wurden, erneut
+                     			ausführen (Redo). Der aktuelle Bearbeitungsstand wird in der Historie markiert
+                     (im Bild blau
+                     			hervorgehoben), vorherige und nachfolgende Aktionen sind aufgeführt.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/globalundo-photoshop.png" title="Historie ausgeführter Aktionen in Photoshop"><img src="../img/globalundo-photoshop.png" width="100%" alt="Historie ausgeführter Aktionen in Photoshop"></img></a><br></br>Historie ausgeführter Aktionen in Photoshop
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Interaktive Systeme, die atomare, für den Benutzer erkennbar separierte Aktionen erlauben,
+                        				z.&nbsp;B. verschiedene Verwaltungsoperationen auf fachlichen Datensätzen (Erzeugen,
+                        Löschen, Ändern
+                        				etc.) oder Bearbeitungsfunktionen für Dokumente (Eingabe, Formatierung, Ersetzung
+                        etc.)
+                        			
+                     </li>
+                     			
+                     <li>Nutzungssituationen mit beliebigen Benutzern: sowohl Laien als auch Experten profitieren
+                        von
+                        				der Undo-Möglichkeit
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Die Möglichkeit, Aktionen rückgängig zu machen, nimmt Benutzern die Furcht vor einer
+                     			Fehlbedienung des Systems und ermutigt sie, die vom System angebotenen Aktionen
+                     ausprobieren
+                     			(explorative Nutzung).
+                     		
+                  </p>
+                  		
+                  <p>Das Wissen darum, das Fehler nicht dauerhaft sind, sondern per Undo einfach korrigiert
+                     werden
+                     			können, lässt Benutzer entspannter und zufriedener arbeiten. Die schnelle Fehlerkorrektur
+                     per
+                     			Undo erhöht zudem die Benutzungseffizienz.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		Wenn allgemein eine Undo-Möglichkeit angeboten wird, müssen Ausnahmen (nicht-reversible
+                  Aktionen)
+                  		für Benutzer klar erkennbar und nachvollziehbar sein. Andernfalls erscheint das
+                  System für
+                  		Benutzer inkonsistent; zudem besteht die Gefahr frustrierender, da nicht rückgängig
+                  zu machender
+                  		Fehler. Eine
+                  		<a href="warnung.html">Warnung</a>
+                  		vor der Ausführung einer irreversiblen Aktion bietet hier ggf. zusätzlichen Schutz.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="objektundo.html">Objektbezogenes Undo</a></strong></p>
+                  <p>Alternativ zur globalen Undo-Möglichkeit kann auch ein objektbezogenes Undo angeboten
+                     			werden, bei dem Aktionen für jedes Objekt (z. B. jeden fachlichen Datensatz) individuell
+                     			rückgängig gemacht werden können. In diesem Fall wird für jedes Objekt eine separate
+                     			Undo-Historie geführt.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="warnung.html">Warnung</a></strong></p>
+                  <p> In nahezu allen Systemen können Benutzer Aktionen ausführen, die aus technischen
+                     			oder konzeptuellen Gründen nicht rückgängig gemacht werden können. Benutzer sollten
+                     darauf durch
+                     			eine entsprechende Warnung explizit hingewiesen werden, damit sie nicht irrtümlich
+                     davon
+                     			ausgehen, auch diese Aktionen per Undo zurücknehmen zu kömmen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, die rückgängig gemacht werden können.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche dieser Aktionen verändern Daten oder wesentliche Einstellungen, welche lediglich
+                        				Darstellungsparameter?
+                        			
+                     </li>
+                     			
+                     <li>Welche dieser Aktionen können von Benutzern nur mit größerem Aufwand manuell zurückgenommen
+                        				werden (z.&nbsp;B. durch das erneute Eingeben eines versehentlich gelöschten Datensatzes)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Globales Undo
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Undo-Verhalten</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Undo-Strategie: Länge der Undo-Historie (max. Anzahl zurückzunehmender
+                              				Aktionen), Einzel-Undo oder Mehrfach-Undo (Rückgängigmachen mehrerer Aktionen
+                              auf einmal)
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Lineares Undo: Benutzer sollen die jeweils zuletzt ausgeführte Aktion rückgängig machen
+                              				können. Die globale Undo-Historie soll maximal die 20 zuletzt ausgeführten Aktionen
+                              umfassen.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Redo-Verhalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe der Redo-Strategie: Einzel- oder Mehrfach-Redo. Nur notwendig, falls
+                              				Benutzern eine Redo-Möglichkeit angeboten werden soll.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Benutzer sollen die jeweils zuletzt zurückgenommene Aktion einzeln wiederherstellen
+                              				können.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Mehrbenutzerverhalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe des Undo-/Redo-Verhaltens bei Mehrbenutzersystemen, d. h. bei paralleler Ausführung
+                              von
+                              				Aktionen durch mehrere Benutzer (ggf. auf denselben Daten)
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Bei paralleler Bearbeitung des Dokuments durch mehrere Benutzer sollen Benutzer eigene
+                              				und Aktionen anderer Benutzer rückgängig machen können.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Globales Undo
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Undo</span><br></br><div class="spec-template-description">Benutzer sollen diesen Ablauf rückgängig machen können.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Bedingung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der Bedingung, unter der der Benutzer den Ablauf rückgängig machen kann.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Das Dokument wurde zwischenzeitlich nicht gespeichert.
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.172+02:00
+      </div>
+   </body>
+</html>

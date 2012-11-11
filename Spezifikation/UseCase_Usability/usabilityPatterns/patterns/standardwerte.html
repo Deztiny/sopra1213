@@ -1,0 +1,264 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Gute Standardwerte</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Gute Standardwerte</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Gute Standardwerte</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Good Defaults</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten möglichst wenige Werte eingeben, um eine Aktion auszuführen.</td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Fülle Eingabefelder mit guten Standardwerten, wenn solche Werte bekannt sind.</strong>
+                     		
+                  </p>
+                  		
+                  <p> Als gute und sinnvolle Standardwerte können z.&nbsp;B.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Eingabewerte aus vorherigen Eingaben,</li>
+                     			
+                     <li>aus fachlicher Sicht wahrscheinliche Eingabewerte (z.&nbsp;B. „Deutschland“ als Standardwert
+                        für
+                        				die Eingabe eines Landes in einem System für den deutschen Markt),
+                        			
+                     </li>
+                     			
+                     <li>vom Benutzer festgelegte Voreinstellungen oder</li>
+                     			
+                     <li>Werte, die aus anderen Eingaben ableitbar sind,</li>
+                     		
+                  </ul>
+                  		
+                  <p>verwendet werden. Erlaube Benutzern aber trotzdem, Standardwerte durch eigene Eingabewerte
+                     zu
+                     			ersetzen.
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Verwende
+                     			<em>keine</em>
+                     			Standardwerte bei kritischen Eingaben (z.&nbsp;B. Passwörtern) oder bei Eingaben, für
+                     die keine guten
+                     			Standardwerte bekannt sind.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>
+                  		In einem Registrierungsformular für eine Website müssen Benutzer ihre Heimatadresse
+                  angeben. Da
+                  		die Website deutschsprachig ist, wird als Standardwert für das
+                  		<em>Land</em>
+                  		„Deutschland“ vorgegeben. Dieser Wert kann aber von den Benutzern leicht geändert
+                  werden.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Eclipse IDE: Erstellung einer neuen Java-Klasse</em></p>
+                  <p>Die Entwicklungsumgebung Eclipse bietet einen Dialog zur Erstellung einer neuen
+                     			Java-Klasse. In diesem Dialog sind verschiedene Standardwerte voreingestellt, die
+                     der Benutzer
+                     			ggf. ohne Änderung übernehmen kann. Das Quellcodeverzeichnis (Source Folder) und
+                     das Paket
+                     			(Package) leitet das System dabei aus den Projekteinstellungen ab, die Oberklasse
+                     (Superclass:
+                     			java.lang.Object) und der Wert für die Sichtbarkeit (Modifiers: public) entsprechen
+                     den
+                     			fachlichen Einstellungen, die erfahrungsgemäß am häufigsten verwendet werden. Eclipse
+                     nutzt somit
+                     			verschiedene „Quellen“ für Standardwerte, um Benutzern die Eingabe zu erleichtern.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/standardwerte-eclipse.png" title="Voreingestellte Standardwerte im Klassen-Dialog in Eclipse"><img src="../img/standardwerte-eclipse.png" width="100%" alt="Voreingestellte Standardwerte im Klassen-Dialog in Eclipse"></img></a><br></br>Voreingestellte Standardwerte im Klassen-Dialog in Eclipse
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Beliebige Eingaben, für die Standardeingabewerte bekannt sind.</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Benutzer können schneller und effizienter mit dem System arbeiten, wenn sie
+                  		Standardwerte übernehmen können, statt alle Werte selbst eingeben zu müssen. Selbst
+                  wenn der
+                  		vorgeschlagene Standardwert nicht dem gewünschten Eingabewert entspricht, weist
+                  er Benutzer z.&nbsp;B.
+                  		auf die Art oder das Format erwarteter bzw. gültiger Eingabewerte hin.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Vorgegebene Standardwerte können von Benutzern übersehen oder nur flüchtig beachtet
+                     werden.
+                     			Wenn das System Standardwerte für kritische Eingaben (z.&nbsp;B. Passwörter, später
+                     nicht mehr
+                     			änderbare Eingabewerte) verwendet, können Benutzer diese Werte versehentlich übernehmen
+                     und so
+                     			unerwünschte Resultate erhalten.
+                     		
+                  </p>
+                  		
+                  <p>Die Standardwerte müssen der Aufgabe angemessen sein und deshalb in einer großen Zahl
+                     von
+                     			Fällen auch tatsächlich vom Benutzer übernommen werden; Standardwerte, die von
+                     Benutzern in den
+                     			meisten Fällen geändert werden müssen, senken die Benutzungseffizienz und können
+                     Benutzer bei der
+                     			Arbeit stören oder verärgern.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="autovervollstaendigung.html">Auto-Vervollständigung</a></strong></p>
+                  <p>
+                     			Für Freitexteingaben können anstelle eines vorgegebenen Standardwerts auch sinnvolle
+                     Vorschläge
+                     			per
+                     			<a href="autovervollstaendigung.html">Auto-Vervollständigung</a>
+                     			vorgeschlagen werden, wenn z.B. mehrere gleichwertige Vorschläge bekannt sind.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Eingaben, für die Standardwerte angegeben werden können.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche Standardwerte sind in einer typischen Nutzungssituation sinnvoll, wie können
+                        sie
+                        				bestimmt werden?
+                        			
+                     </li>
+                     			
+                     <li>Ist die Eingabe kritisch, sollte also besser kein Standardwert angegeben werden?</li>
+                     			
+                     <li>Existieren Klassen von Eingaben, die im System mehrfach vorkommen und bei denen einheitliche
+                        				Standardwerte verwendet werden sollen?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Funktionen</strong>
+                        					(Use Cases) für den Einsatz des Usability Patterns „
+                        					Gute Standardwerte
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Funktion</span><span class="spec-template-name">Standardwerte verwalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Use Case, mit dem Benutzer die Standardwerte verwalten (z. B. an eigene Bedürfnisse
+                              				anpassen) können.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Gute Standardwerte
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Standardwerte</span><br></br><div class="spec-template-description">Für diesen Eingabeschritt soll das System gute Standardwerte vorgeben.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Werte</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Vorgabe der Standardwerte für den Eingabeschritt (ggf. vom System kontextabhängig
+                                 					bestimmt)
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Für einen Routenplaner: Als Standardwert für den Startort der geplanten Route wird
+                                 die
+                                 					aktuelle Position des Benutzers vorgegeben.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.284+02:00
+      </div>
+   </body>
+</html>

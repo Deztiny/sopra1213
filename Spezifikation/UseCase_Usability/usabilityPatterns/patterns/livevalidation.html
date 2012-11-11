@@ -1,0 +1,184 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Live Validation</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Live Validation</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Live Validation</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>When users freely enter data that needs to meet certain validation criteria (e.g.
+                  correct
+                  		format, valid spelling), they want quick feedback if the data is valid or not.
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Validate input data “live” while users are typing, and unobtrusively show the validation
+                        				result.</strong>
+                     		
+                  </p>
+                  		
+                  <p>If validation takes time, validate input data when users have finished their input
+                     into the
+                     			particular input field (e.g. when the focus is on the next input field). In any
+                     case, validation
+                     			should start automatically without explicit user action.
+                  </p>
+                  		
+                  <p>Immediately show if the input data is valid or not. Use symbols or messages that are
+                     clear and
+                     			easily understandable. If the input data is not valid, give users a hint on how
+                     to correct their
+                     			input.
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Eclipse IDE: New Java class dialog</em></p>
+                  <p>When the user enters an invalid Java package name in the dialogue, Eclipse
+                     			immediately shows a warning.
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/direktevalidierung-eclipse2.png" title="Live Validation in Eclipse"><img src="../img/direktevalidierung-eclipse2.png" width="100%" alt="Live Validation in Eclipse"></img></a><br></br>Live Validation in Eclipse
+                  </div><br style="clear:both;"></br><p><em>Google.com: Create a new Google account</em></p>
+                  <p>When the user enters an invalid e-mail address, Google.com immediately notifies the
+                     			user and shows a hint. In the example screenshot, Google.com reminds the user that
+                     e-mail
+                     			addresses must contain an @ symbol.
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/direktevalidierung-google.png" title="Live Validation at Google.com"><img src="../img/direktevalidierung-google.png" width="100%" alt="Live Validation at Google.com"></img></a><br></br>Live Validation at Google.com
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Untrained or infrequent users that need guidance when working with the system</li>
+                     			
+                     <li>Input dialogs with multiple input fields that can be validated independently</li>
+                     			
+                     <li>Inputs that require a particular format or have to meet certain criteria</li>
+                     			
+                     <li>Inputs that can be validated immediately (i.e. without time lag)</li>
+                     			
+                     <li>Inputs that cannot be corrected automatically</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Live Validation assists users in entering valid input data. Users can easily recognize
+                     if their
+                     			inputs are invalid and, if necessary, correct them according to the given hints.
+                     Live Validation
+                     			thus improves the self-descriptiveness of the system.
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identify user inputs that have to meet certain format or content-related criteria.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Should the system immediately validate user inputs?</li>
+                     			
+                     <li>Which validation rules apply?</li>
+                     		
+                  </ul>
+                  		
+                  <p>Define when validation should take place.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Should validation take place immediately or not before the user has finished its input?</li>
+                     			
+                     <li>Should the system support different validation variants?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Live Validation
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">UI representation</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Specify how validation results (for valid and invalid data) are displayed.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Live Validation
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Live Validation</span><br></br><div class="spec-template-description">Annotate user input steps where data should be immediately validated.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Valid data</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Define criteria for valid data.</div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.0
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.209+02:00
+      </div>
+   </body>
+</html>

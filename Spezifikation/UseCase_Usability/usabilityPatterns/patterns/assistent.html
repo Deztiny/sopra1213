@@ -1,0 +1,287 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Assistent</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Assistent</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Assistent</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Wizard</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>
+                  		
+                  <p>Benutzer möchten ein bestimmtes Ziel erreichen, müssen dazu jedoch eine Reihe von
+                     			Entscheidungen treffen oder verschiedene Daten eingeben, die sie zunächst nicht
+                     überblicken.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Führe Benutzer mit Hilfe eines Assistenten schrittweise durch eine komplexe Aufgabe.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p> Teile komplexe Eingaben oder mehrstufige Entscheidungen in überschaubare Teilaufgaben
+                     auf, die
+                     			der Benutzer nacheinander erledigen kann. Biete einen Dialog-Assistenten an, der
+                     den Benutzer
+                     			schrittweise durch die einzelnen Teilaufgaben führt. Der Assistent sollte dem Benutzer
+                     eine
+                     			Übersicht über die einzelnen bereits erledigten und die noch ausstehenden Teilaufgaben
+                     anzeigen,
+                     			damit der Fortschritt und der noch benötigte Aufwand bis zur Erreichung des Ziels
+                     abschätzbar
+                     			sind. Der Assistent sollte dem Benutzer erlauben, zu vorigen Schritten zurückzukehren.
+                     		
+                  </p>
+                  		
+                  <p> Die noch ausstehenden Teilaufgaben können sich dynamisch aufgrund bisheriger Eingaben
+                     des
+                     			Benutzers ändern, d.h. Teilaufgaben können wegfallen oder hinzukommen, wenn der
+                     Benutzer in einem
+                     			vorherigen Schritt bestimmte Entscheidungen trifft. Weise Benutzer in diesem Fall
+                     darauf hin,
+                     			weshalb diese Schritte wegfallen bzw. hinzukommen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Apple Mail: Konfiguration eines E-Mail-Kontos</em></p>
+                  <p>
+                     			Die E-Mail-Anwendung Apple Mail führt Benutzer mit Hilfe eines Assistenten durch
+                     die notwendigen
+                     			Schritte zur Konfiguration eines E-Mail-Kontos. In jedem Teildialog muss der Benutzer
+                     bestimmte
+                     			Eingaben vornehmen, die jeweils inhaltlich zusammengehören (in den Screenshots:
+                     Persönliche
+                     			Informationen, Angaben zum Mail-Server). Bei jedem Schritt werden die Eingabewerte
+                     überprüft.
+                     			Benutzer können über einheitliche Buttons zwischen den einzelnen Schritten im Assistent
+                     			navigieren oder den Ablauf
+                     			<a href="abbruch.html">abbrechen</a>
+                     			.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/assistent-mail1.png" title="Assistent in Apple Mail: Eingabe der persönlichen Informationen (Schritt 1)"><img src="../img/assistent-mail1.png" width="100%" alt="Schritt 1: Eingabe der persönlichen Informationen"></img></a><br></br>Schritt 1: Eingabe der persönlichen Informationen
+                  </div>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/assistent-mail2.png" title="Assistent in Apple Mail: Eingabe der Serverkonfiguration (Schritt 2)"><img src="../img/assistent-mail2.png" width="100%" alt="Schritt 2: Eingabe der Serverkonfiguration"></img></a><br></br>Schritt 2: Eingabe der Serverkonfiguration
+                  </div><br style="clear:both;"></br><p><em>Bahn.de: Buchung einer Zugfahrt</em></p>
+                  <p>Bei der Online-Buchung von Zugfahrten mit der Deutschen Bahn werden Benutzer von
+                     			einem Assistenten durch die einzelnen Buchungsschritte geführt. Alle Schritte werden
+                     in einer
+                     			Übersicht am oberen Rand des Dialogs angezeigt. Bereits erledigte Schritte werden
+                     grafisch
+                     			„abgehakt“, der aktuelle Schritt hervorgehoben.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/assistent-bahn.png" title="Buchungsassistent auf Bahn.de: Übersicht über die erledigten, den aktuellen und die noch ausstehenden Schritte bei der Online-Buchung"><img src="../img/assistent-bahn.png" width="100%" alt="Übersicht über die Buchungsschritte bei Bahn.de"></img></a><br></br>Übersicht über die Buchungsschritte bei Bahn.de
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li> Aufgaben, bei denen Benutzer viele verschiedene Eingaben tätigen oder eine Reihe
+                        von
+                        				Entscheidungen treffen müssen
+                        			
+                     </li>
+                     			
+                     <li>Aufgaben, die sich sinnvoll in einzelne, nacheinander ausführbare Teilaufgaben zerlegen
+                        				lassen
+                        			
+                     </li>
+                     			
+                     <li>Nutzungssituationen, in denen ungeübte Benutzer mit dem System arbeiten, die die zur
+                        				Zielerreichung notwendigen Schritte nicht kennen oder überblicken
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Ein Assistent erlaubt Benutzern, komplexe Aufgaben schrittweise und im jeweils gewünschten
+                     			Tempo zu erledigen und verbessert so die Steuerbarkeit des Systems. Einzelne Teilschritte
+                     der
+                     			Aufgabe können vom System in Abhängigkeit bereits getätigter Eingaben an das Ziel
+                     des Benutzers
+                     			angepasst werden, um unnötige Schritte zu vermeiden. Wenn der Assistent eine Übersicht
+                     über die
+                     			einzelnen Teilschritte anzeigt, können Benutzer zudem leicht erkennen, an welcher
+                     Stelle im
+                     			Ablauf sie sich momentan befinden und welche weiteren Schritte noch zu erledigen
+                     sind. Ein
+                     			Assistent verhindert auch, dass Benutzer wichtige Eingaben vergessen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p> Erfahrene Benutzer werden durch Assistenten unter Umständen gebremst. Zudem geben
+                     Assistenten
+                     			zumeist eine feste Abfolge der einzelnen Teilaufgaben vor und verhindern so, dass
+                     Benutzer die
+                     			einzelnen Teilschritte in der von ihnen gewünschten Reihenfolge ausführen können.
+                     (Allerdings ist
+                     			eine bestimmte Abfolge häufig durch inhaltliche Abhängigkeiten vorgegeben.)
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Benutzer sollten die Möglichkeit haben, einen durch einen Assistenten unterstützten
+                     			Ablauf abzubrechen.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="standardwerte.html">Gute Standardwerte</a></strong></p>
+                  <p>Das System sollte für komplexe, assistentengestützte Eingabedialoge gute
+                     			Standardwerte vorgeben, um Benutzern ein effizientes Durchlaufen des Assistenten
+                     zu erlauben.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="direktevalidierung.html">Direkte Validierung</a></strong></p>
+                  <p>Benutzereingaben in einzelnen Teilschritten eines Assistenten können direkt validiert
+                     			werden. Benutzer können nur bei gültigen Eingabewerten mit dem nächsten Schritt
+                     fortfahren. Dies
+                     			stellt vollständige und gültige Eingaben im Assistent sicher, geht allerdings auf
+                     Kosten der
+                     			Steuerbarkeit, da Benutzer in diesem Fall nicht frei vorwärts und rückwärts innerhalb
+                     des
+                     			Gesamtablaufs navigieren können.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere komplexe Abläufe</p>
+                  		
+                  <ul>
+                     			
+                     <li>Lassen sich die Abläufe in mehrere einzelne Teilschritte unterteilen?</li>
+                     			
+                     <li>Welche Abhängigkeiten bestehen zwischen den Teilschritten? Können Benutzereingaben
+                        den
+                        				Dialogablauf verändern?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p>Überlege, wie die Übersicht über die Teilschritte dargestellt werden soll.</p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Assistent
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Assistent</span><br></br><div class="spec-template-description">Das System soll Benutzer mit Hilfe eines Assistenten durch diesen Ablauf führen.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Assistenten-Schritte</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Vorgabe der einzelnen Schritte (Teilaufgaben), in die der Ablauf unterteilt werden
+                                 soll.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Registrierung als Kunde bei einem Online-Shop: Schritt 1: Eingabe von Name und
+                                 					Anschrift; Schritt 2: Eingabe der Zahlungsinformationen; Schritt 3: Einrichtung
+                                 des
+                                 					Benutzerkontos
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Ablauf
+                                 				</span><span class="spec-template-name">Ablauf ohne Assistent</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Alternativer Ablauf ohne Verwendung des Assistenten</div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:24.891+02:00
+      </div>
+   </body>
+</html>

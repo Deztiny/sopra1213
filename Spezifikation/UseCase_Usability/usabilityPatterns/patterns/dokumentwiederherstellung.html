@@ -1,0 +1,277 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Dokumentwiederherstellung</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Dokumentwiederherstellung</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Dokumentwiederherstellung</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten keine ungespeicherten Änderungen an einem Dokument verlieren, wenn
+                  ein
+                  		Systemfehler auftritt.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Ermögliche Benutzern, nach einem Systemfehler die letzte Fassung eines Dokuments
+                        				wiederherzustellen.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Speichere Änderungen am Dokument automatisch in regelmäßigen (kurzen) zeitlichen Abständen.</p>
+                  		
+                  <p> Im Falle eines Systemfehlers („Absturz“): Erlaube Benutzern beim nächsten Start des
+                     Systems,
+                     			die letzte (verfügbare) Fassung des Dokuments wiederherzustellen.
+                     		
+                  </p>
+                  		
+                  <p>Stelle sicher, dass die für die Wiederherstellung benötigten Daten (z.B. eine Kopie
+                     des
+                     			Dokuments) bei einem Systemfehler nicht beschädigt werden. Achte ebenfalls darauf,
+                     dass die
+                     			Wiederherstellungsdaten dauerhaft gespeichert bleiben und beim nächsten Start des
+                     Systems noch
+                     			vorhanden ist. (Die Wiederherstellungsdaten sollten also z.B. nicht in einem temporären
+                     			Verzeichnis gespeichert werden, das vom Betriebssystem automatisch gelöscht wird.)
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>OpenOffice.org 3.2: Dokumentwiederherstellung</em></p>
+                  <p>OpenOffice speichert in regelmäßigen Intervallen Wiederherstellungsdaten für
+                     			geöffnete Dokumente. Nach einem Absturz des Programms können Benutzer beim nächsten
+                     Start
+                     			auswählen, ob sie die zuletzt bearbeiteten Dokumente wiederherstellen möchten.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/dokumentwiederherstellung-openoffice.png" title="Erfolgreiche Dokumentwiederherstellung nach einem Absturz von OpenOffice"><img src="../img/dokumentwiederherstellung-openoffice.png" width="100%" alt="Erfolgreiche Dokumentwiederherstellung"></img></a><br></br>Erfolgreiche Dokumentwiederherstellung
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Dokument-/Dateizentrierte Anwendungen (z.B. Textverarbeitung, Bildbearbeitung)</li>
+                     			
+                     <li>Nutzungssituationen, in denen Benutzer längere Zeit mit einem Dokument arbeiten, so
+                        dass
+                        				ihnen bei einem unvorhergesehenen Systemfehler der Verlust umfangreicher Änderungen
+                        droht.
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p> Systemfehler sind nicht immer zu vermeiden. Die Dokumentwiederherstellung begrenzt
+                     in diesem
+                     			Fällen die negativen Auswirkungen für Benutzer, da ein vollständiger Datenverlust
+                     ungespeicherter
+                     			Änderungen vermieden wird. Die Fehlerbehebung wird erleichtert, da Benutzer beim
+                     nächsten
+                     			Systemstart die Möglichkeit erhalten, in wenigen Schritten die Daten wiederherzustellen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="autosave.html">Automatisches Speichern</a></strong></p>
+                  <p>Dokumentwiederherstellung ist für Systeme geeignet, bei denen die eigentliche
+                     			Speicherung des Dokuments weiterhin dem Benutzer überlassen werden soll und von
+                     ihm aktiv
+                     			angestoßen muss. Durch vom System automatisch gespeicherte Wiederherstellungsdaten
+                     wird dabei ein
+                     			möglicher Datenverlust vermieden, falls der Benutzer z.B. zu speichern vergisst.
+                     Alternativ dazu
+                     			kann das System aber auch automatisch Daten bei Änderungen speichern, ohne das
+                     der Benutzer sich
+                     			aktiv darum kümmern muss. Dies ist vor allem sinnvoll für Daten, bei denen davon
+                     ausgegangen
+                     			werden kann, dass beim automatischen Speichern nicht unerwünscht Daten überschrieben
+                     werden (wie
+                     			es z.B. beim automatischen Speichern einer geänderten Datei denkbar wäre).
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Benutzer müssen die Möglichkeit haben, nach einem Systemfehler auf die
+                     			Wiederherstellung der gespeicherten Daten zu verzichten und den Wiederherstellungsvorgang
+                     			abzubrechen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Prüfe, ob Wiederherstellungsdaten für Dokumente automatisch gespeichert werden sollen.</p>
+                  		
+                  <ul>
+                     			
+                     <li>In welchem zeitlichen Abstand sollen die Wiederherstellungsdaten gespeichert werden?</li>
+                     			
+                     <li>Alternativ: Sollen Wiederherstellungsdaten nach bestimmten definierten Aktionen gespeichert
+                        				werden?
+                        			
+                     </li>
+                     			
+                     <li>Soll die Speicherung von Wiederherstellungsdaten benutzerkonfigurierbar sein?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Dokumentwiederherstellung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Wiederherstellungsstrategie</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Speicherstrategie für Wiederherstellungsdaten (z.B. Festlegung eines
+                              				Zeitintervalls). Vorgabe der Wiederherstellungsstrategie (z.B. Festlegung, wann
+                              Daten
+                              				wiederhergestellt werden sollen).
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Das System soll alle 5 Minuten Wiederherstellungsdaten speichern. Nach einem
+                              				Systemfehler soll das System dem Benutzer beim nächsten Systemstart die Möglichkeit
+                              bieten,
+                              				ausgehend von diesen Wiederherstellungsdaten weiterzuarbeiten.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Wiederherstellungsdaten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe der Daten, für die Wiederherstellungsinformationen gespeichert werden
+                              				sollen.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Alle aktuell geöffneten Dokumente
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Funktionen</strong>
+                        					(Use Cases) für den Einsatz des Usability Patterns „
+                        					Dokumentwiederherstellung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Funktion</span><span class="spec-template-name">Dokumentwiederherstellung nach Systemfehler</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Use Case, in dem Benutzer die Möglichkeit haben, nach einem Systemfehler auf die
+                              				Wiederherstellungsdaten zurückzugreifen und mit diesen Daten weiterzuarbeiten.
+                              Diese Möglichkeit
+                              				wird üblicherweise in den regulären Systemstart eingebunden, wenn das System feststellt,
+                              dass es
+                              				zuvor nicht korrekt beendet wurde.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Option im Use Case "System starten"
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Funktion</span><span class="spec-template-name">Automatisches Speichern der Wiederherstellungsdaten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Use Case zur automatischen Speicherung der Wiederherstellungsdaten (bei Speicherung
+                              				in regelmäßigen Abständen). Hauptakteur im Use Case ist z.B. ein Zeitgeber/Timer,
+                              der den Use
+                              				Case in regelmäßigen zeitlichen Abständen initiiert.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Dokumentwiederherstellung
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Speicherung von Wiederherstellungsdaten</span><br></br><div class="spec-template-description">Nach diesem Ablauf soll das System Wiederherstellungsdaten speichern, mit denen die
+                              				aktuell vorhandenen Daten nach einem Systemfehler wiederhergestellt werden können.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.0
+         						– Autor:
+         						roederhr<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.026+02:00
+      </div>
+   </body>
+</html>

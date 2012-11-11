@@ -1,0 +1,301 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Wiederholung</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Wiederholung</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Wiederholung</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>
+                  		
+                  <p>Benutzer möchten die zuletzt ausgeführte Aktion wiederholen, also mit gleichen oder
+                     ähnlichen
+                     			Eingabewerten erneut ausführen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Erlaube Benutzern, ausgeführte Aktionen auf einfache Weise zu wiederholen, ohne alle
+                        				Eingabewerte ein weiteres Mal eingeben zu müssen.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Bei der Wiederholung der Aktion sollte das System die Eingabewerte (Parameter) der
+                     vorigen
+                     			Ausführung übernehmen, wenn dies möglich und sinnvoll ist. Häufig möchten Benutzer
+                     auch eine
+                     			ausgeführte Aktion in leicht veränderter Weise, z.&nbsp;B. auf anderen Datenobjekten,
+                     wiederholen. Wo
+                     			dies eindeutig ist, sollten die Eingabewerte für die erneute Ausführung der Aktion
+                     automatisch
+                     			ersetzt werden; andernfalls sollte das System den Benutzer zur Eingabe auffordern.
+                     		
+                  </p>
+                  		
+                  <p>Gestalte die Benutzungsschnittstelle so, dass Benutzer einfach erkennen können, welche
+                     Aktionen
+                     			wiederholt werden können.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>
+                  		
+                  <p>In einem Textverarbeitungsprogramm legt der Benutzer in einem Dialogfeld verschiedene
+                     			Formatierungsvorgaben (z. B. Schriftart und -größe, Zeilenabstand und Ausrichtung)
+                     für einen
+                     			markierten Textabsatz fest. Anschließend markiert der Benutzer einen anderen Textabsatz
+                     und wählt
+                     			die Aktion „Formatierung wiederholen“, um auch für diesen Absatz die gleichen
+                     			Formatierungsvorgaben festzulegen. Das System übernimmt daraufhin für den neu markierten
+                     Absatz
+                     			die zuvor gewählten Vorgaben, ohne dass der Benutzer sie erneut eingeben muss.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Microsoft® Excel® 2008 für Mac: Funktion „Wiederholen“</em></p>
+                  <p>Excel erlaubt Benutzern, bestimmte Aktionen zu wiederholen. Im Beispiel hebt der
+                     			Benutzer die Zelle B3 mit dem Wert „31,62€“ durch eine auffällige gelbe Formatierung
+                     hervor.
+                     			Anschließend markiert er eine andere Zelle (die Zelle B6 mit dem Wert „46,45€“)
+                     und wählt über
+                     			die Werkzeugleiste die Aktion „Wiederholen: Zellen formatieren“ (Abbildung 1),
+                     um die
+                     			Formatierung auch für diese Zelle zu übernehmen (Abbildung 2). Excel wiederholt
+                     somit die
+                     			ausgeführte Aktion „Zellformatierung“ in leicht variierter Form: die Formatierungseinstellungen
+                     			werden als Parameter übernommen, der Parameter „Zu formatierende Zelle“ wird durch
+                     die vom
+                     			Benutzer aktuell ausgewählte Zelle ersetzt.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/wiederholung-excel1.png" title="Abbildung 1: Die wiederholbare Aktion (Zellformatierung) wird als Tooltip angezeigt"><img src="../img/wiederholung-excel1.png" width="100%" alt="Abbildung 1"></img></a><br></br>Abbildung 1
+                  </div>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/wiederholung-excel2.png" title="Abbildung 2: Die Zellformatierung wurde wiederholt, die Zelle B6 ist eingefärbt"><img src="../img/wiederholung-excel2.png" width="100%" alt="Abbildung 2"></img></a><br></br>Abbildung 2
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Interaktive Systeme, die unabhängige, für den Benutzer erkennbar separierte Aktionen
+                        				erlauben, z.&nbsp;B. Verwaltungsoperationen auf fachlichen Datensätzen (Erzeugen, Löschen,
+                        Ändern
+                        				etc.) oder Bearbeitungsfunktionen für Dokumente (Formatierung, Ersetzung etc.)
+                        			
+                     </li>
+                     			
+                     <li> Arbeitsaufgaben, bei denen Wiederholung ausgeführter Aktionen häufig erforderlich
+                        ist, z.&nbsp;B.
+                        				die Verwaltung umfangreicher Datensatzmengen
+                        			
+                     </li>
+                     			
+                     <li> Nutzungssituationen, in denen Benutzer häufig und jeweils längere Zeit mit dem System
+                        				arbeiten und auf effizientes Arbeiten angewiesen sind
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Benutzer arbeiten effizienter mit dem System, wenn sie Aktionen, die häufig mehrfach
+                  		ausgeführt werden, einfach und bequem wiederholen können. Sie müssen Eingabewerte,
+                  die sie bereits
+                  		bei der ersten Ausführung der Aktion eingegeben haben, kein (aus Benutzersicht unnötiges)
+                  weiteres
+                  		Mal eingeben.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Die durchgängige Umsetzung des Features ist aufwändig; sie ist nur zu rechtfertigen,
+                     wenn für
+                     			einen nennenswerten Anteil der insgesamt angebotenen Aktionen eine Wiederholung
+                     aus fachlicher
+                     			Sicht sinnvoll und aus technischer Sicht möglich ist.
+                     		
+                  </p>
+                  		
+                  <p> Für Benutzer sollte die Wiederholbarkeit einer Aktion der Normalfall und die
+                     			Nichtwiederholbarkeit die Ausnahme sein. Sind nur wenige der insgesamt verfügbaren
+                     Aktionen
+                     			wiederholbar, besteht die Gefahr, dass das Systemverhalten für Benutzer inkonsistent
+                     erscheint
+                     			und nicht erwartungskonform ist.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="globalundo.html">Globales Undo</a></strong></p>
+                  <p>
+                     			Die Wiederholung von Aktionen kann mit einem
+                     			<a href="globalundo.html">Globalen Undo</a>
+                     			(Rückgängigmachen ausgeführter Aktionen) kombiniert werden, da beide Patterns atomare
+                     Aktionen
+                     			voraussetzen und häufig ähnlich umgesetzt werden. Dabei ist der Unterschied zwischen
+                     Wiederholung
+                     			und Redo (als Gegenpart zu Undo) zu beachten: Wiederholung führt eine bereits ausgeführte
+                     Aktion
+                     			erneut aus; Redo nimmt die zuletzt ausgeführte Undo-Aktion zurück.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="standardwerte.html">Gute Standardwerte</a></strong></p>
+                  <p>
+                     			Als einfachere Alternative zur Wiederholung von Aktionen kann das System bei der
+                     Ausführung einer
+                     			Aktion die Eingabewerte der vorherigen Ausführung als
+                     			<a href="standardwerte.html">gute Standardwerte</a>
+                     			vorschlagen. Benutzer müssen die Werte dann ebenfalls nicht erneut eingeben.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere wiederholbare Aktionen (repräsentiert durch Use-Case-Abläufe), deren
+                     Wiederholung
+                     			fachlich möglich und aus Sicht des Benutzers sinnvoll ist.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Werden diese Aktionen von Benutzern häufig mehrfach nacheinander ausgeführt?</li>
+                     			
+                     <li>In welchen Fällen können und sollen diese Aktionen wiederholbar sein, in welchen nicht?</li>
+                     			
+                     <li>In welchen Fällen können bei der Wiederholung einer Aktion die Eingabewerte (Parameter)
+                        der
+                        				vorherigen Ausführung übernommen werden, in welchen nicht?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Wiederholung
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Wiederholung</span><br></br><div class="spec-template-description">Benutzer sollen diesen Ablauf automatisch wiederholen können.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Übernommene Eingabewerte</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe der Eingabewerte, die bei der Wiederholung des Ablaufs von der vorherigen
+                                 					Ausführung übernommen werden.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Alle einfachen Werte der fachlichen Attribute des Datensatzes, auf dem die Aktion
+                                 zuvor
+                                 					ausgeführt wurde.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Variierte Eingabewerte</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe der Eingabewerte, die bei der Wiederholung des Ablaufs neu vom Benutzer
+                                 					eingegeben/bestätigt werden müssen. Zusätzlich Eingabewerte, die das System automatisch
+                                 					bestimmen soll (z. B. das aktuell ausgewählte Datenobjekt).
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Der aktuell ausgewählte Datensatz wird aktualisiert.
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Bedingung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der Bedingung, unter der der Ablauf wiederholt werden kann.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Ein Datensatz desselben fachlichen Datentyps, auf dem die vorige Aktion ausgeführt
+                                 					wurde, ist ausgewählt.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.348+02:00
+      </div>
+   </body>
+</html>

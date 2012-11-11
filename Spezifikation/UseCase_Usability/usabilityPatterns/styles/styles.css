@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+body {
+	font-family: "Droid Sans", "Lucida Grande", "Segoe UI", "Arial", sans-serif;
+	font-size: 0.95em;
+	line-height: 1.3em;
+	margin: 0;
+	color: #1E3950;
+}
+
+/*
+
+Navigationsleiste oben
+
+*/
+#nav,#nav a {
+	background: #174C6C;
+	color: #D4E0E8;
+	overflow: hidden;
+	font-size: 0.88em;
+	padding: 5px;
+	text-decoration: none;
+	min-height: 20px;
+}
+
+#nav a:hover {
+	color: #FFF;
+}
+
+/*
+
+Kopfzeile / Titel
+
+*/
+#header {
+	background: none repeat scroll 0 0 #457CA0;
+	border-top: 1px solid #639DC4;
+	border-bottom: 1px solid #3280B1;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	text-shadow: 0 1px 0 #000000;
+}
+
+/*
+
+Hauptseiteninhalt
+
+*/
+#content {
+	background: none repeat scroll 0 0 #D4E0E8 /*#DCEEFC */       
+		                 
+		                   /*#D4E0E8*/;
+	/* background-image: -moz-radial-gradient(50% 10%, circle, #FFFFFF, rgba(255, 255, 255, 0) 50% ); */
+	/* background-image: -webkit-gradient(radial, 50% 10%, 400, 50% 0, 0, from(rgba(255, 255, 255, 0) ), to(rgba(255, 255, 255, 1) ) ); */
+	border-bottom: 1px solid #B6C4D3;
+	border-top: 1px solid #FFFFFF;
+	padding: 10px;
+	min-height: 400px;
+}
+
+/*
+
+Fußzeile
+
+*/
+#footer {
+	overflow: hidden;
+	padding: 10px;
+	color: #457CA0;
+	font-size: 0.9em;
+	font-style: italic;
+	min-height: 50px;
+}
+
+/* 
+
+Allgemeine Stile
+
+*/
+a,a:visited {
+	color: #FF4100;
+}
+
+a:hover {
+	color: #DD8000;
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	padding: 0 20px;
+	list-style-type: square;
+}
+
+ul li+li {
+	margin-top: 0.3em;
+}
+
+table.pattern-table {
+	border: 0;
+	width: 900px;
+	empty-cells: show;
+}
+
+table.catalog-table {
+	border: 0;
+	width: 900px;
+	empty-cells: show;
+}
+
+
+td,th {
+	padding: 5px 10px;
+	vertical-align: top;
+	border-collapse: collapse;
+}
+
+td {
+	border-bottom: 1px dotted #408000;
+}
+
+th {
+	text-align: right;
+	color: #457CA0;
+	text-shadow: 0 1px 0 #FFF;
+	font-size: 0.95em;
+}
+
+th.implementation {
+	color: #CC8000;
+}
+
+td.implementation {
+	background-color: #E9EFF3 /*rgba(255, 255, 255, 0.5)*/;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin: 10px 0;
+}
+
+/*
+
+Formatierungen für Übersichtsseite
+
+*/
+
+
+/*
+
+Formatierungen der Usability-Pattern-Beschreibung
+
+*/
+/* Beispiel-Screenshot */
+div.example-image {
+	margin: 10px;
+	border: 10px solid #FFF;
+	background: #FFF;
+	font-size: 80%;
+	text-align: center;
+	width: 200px;
+	float: left;
+}
+
+div.example-image img {
+	margin-bottom: 5px;
+	border: 0px;
+}
+
+/* Spezifikation */
+ul.spec-template-list {
+	list-style-type: none;
+	padding-left: 0;
+	margin: 3px 0;
+}
+
+ul.spec-template-list li {
+	margin-bottom: 5px;
+}
+
+/* Bereichsmarkierung für Spezifikationselemente (global vs. lokal) */
+div.spec-template-type { /*
+	-moz-border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 2px solid /* #CC8000; */ /* #457CA0; */
+	border-left: 6px solid #CC8000; /* #457CA0; */
+	padding: 3px 6px;
+	margin: 10px 0px;
+}
+
+/* Kennzeichnung des Typs des Spezifikationselements */
+span.spec-template-marker {
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px rgba(255, 255, 255, 0.4), 0 20px 20px -10px white
+		inset;
+	-webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.4), 0 20px 20px -10px
+		white inset;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	margin: 2px 5px;
+	padding: 3px 6px;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+	background-color: #D4E0E8;
+	border: 1px solid black;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+/* Optionale Spezifikationselemente */
+span.spec-template-use-optional {
+	background-color: #CCCCCC;
+}
+
+/* Benötigte Spezifikationselemente */
+span.spec-template-use-required {
+	background-color: #66FFCC;
+}
+
+/* Annotationsziel */
+span.spec-template-annotation-target {
+	
+}
+
+/* Name von Spezifikationselementen */
+span.spec-template-name {
+	font-weight: bold;
+}
+
+/* Bereich für Beschreibung eines Spezifikationselements */
+div.spec-template-description {
+	padding-left: 30px;
+	padding-bottom: 0.2em;
+}
+
+/* Beispiel für Spezifikationselement */
+div.spec-template-example {
+	padding-left: 30px;
+	padding-bottom: 0.2em;
+	color: #457CA0;
+}
+
+/* Bereich für zu spezifizierende Parameter (zu Annotationen) */
+div.spec-template-parameters {
+	padding-left: 30px;
+}
+
+/* Bereich für zu ergänzende Use-Case-Elemente */
+div.spec-template-extensions {
+	padding-left: 30px;
+}
+
+/* Kennzeichnung der Art des Zusammenspiels mit einem anderen Usability Pattern */
+span.pattern-relation-marker {
+	-moz-border-radius: 3px 3px 3px 3px;
+	-moz-box-shadow: 0 1px rgba(255, 255, 255, 0.4), 0 20px 20px -10px white
+		inset;
+	border: 1px solid black; /*rgba(0, 0, 0, 0.6);*/
+	display: inline-block;
+	margin: 2px 3px;
+	padding: 3px 6px;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}

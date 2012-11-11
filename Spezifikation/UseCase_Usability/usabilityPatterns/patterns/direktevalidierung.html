@@ -1,0 +1,339 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Direkte Validierung</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Direkte Validierung</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Direkte Validierung</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten Daten frei eingeben, die bestimmten Kriterien genügen, z.&nbsp;B. ein
+                  		bestimmtes Format haben oder inhaltlich gültig sind. Dabei möchten sie ungültige
+                  Eingaben rasch
+                  		erkennen und korrigieren können.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Prüfe Eingabewerte bereits während der Eingabe automatisch auf Gültigkeit.</strong>
+                     		
+                  </p>
+                  		
+                  <p> Falls die Validierung (Prüfung) nicht verzögerungsfrei möglich ist, führe sie unmittelbar
+                     nach
+                     			Abschluss der Eingabe durch (z. B. immer dann, wenn der Benutzer zum nächsten Eingabefeld
+                     			wechselt). Führe die Validierung in jedem Fall automatisch durch, ohne einen expliziten
+                     Aufruf
+                     			durch den Benutzer zu verlangen.
+                     		
+                  </p>
+                  		
+                  <p>Zeige direkt an, ob Eingaben gültig oder ungültig sind. Verwende dabei eine leicht
+                     			verständliche, aber zurückhaltende Art der Darstellung. Benutzer sollten nicht
+                     abgelenkt und ihre
+                     			Eingabe nicht unterbrochen werden.
+                     		
+                  </p>
+                  		
+                  <p>Gib dem Benutzer bei ungültigen Eingaben einen konstruktiven Hinweis, welche Kriterien
+                     gelten
+                     			und wie er seine Eingabe korrigieren kann.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>
+                  		
+                  <p>Im Registrierungsformular für neue Kunden eines Online-Shops muss ein Kunde neben
+                     verschiedenen
+                     			anderen Daten auch seine E-Mail-Adresse in ein Freitextfeld eingeben.
+                     		
+                  </p>
+                  		
+                  <p>Bereits während der Kunde seine E-Mail-Adresse eingibt, prüft das System, ob der aktuelle
+                     			Eingabewert eine syntaktisch gültige E-Mail-Adresse darstellt. Ist dies nicht der
+                     Fall, zeigt das
+                     			System direkt neben dem Eingabefeld ein rotes Warnschild und einen Korrekturhinweis
+                     an, z.&nbsp;B.
+                     			„Bitte geben Sie eine E-Mail-Adresse im Format name@domain.tld ein.“. Andernfalls
+                     signalisiert
+                     			das System durch ein „grünes Häkchen“, dass die eingegebene E-Mail-Adresse gültig
+                     ist. Der Kunde
+                     			erkennt auf diese Weise unmittelbar, ob seine Eingabe dem erwarteten Format entspricht
+                     oder
+                     			nicht.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Eclipse IDE: Erstellung einer neuen Java-Klasse</em></p>
+                  <p>Im Dialog zur Erstellung einer neuen Java-Klasse muss der Benutzer den Namen des
+                     			Pakets (package) angeben, in dem die neue Klasse liegen soll. Bei ungültigen Paketnamen
+                     (im Bild:
+                     			„org revager“ mit Leerzeichen) zeigt Eclipse unmittelbar eine Fehlermeldung im
+                     oberen Bereich des
+                     			Dialogs an.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/direktevalidierung-eclipse2.png" title="Direkte Validierung des Paketnamens in Eclipse"><img src="../img/direktevalidierung-eclipse2.png" width="100%" alt="Direkte Validierung des Paketnamens in Eclipse"></img></a><br></br>Direkte Validierung des Paketnamens in Eclipse
+                  </div><br style="clear:both;"></br><p><em>Google.com: Erstellung eines Google-Kontos</em></p>
+                  <p>Der Benutzer muss bei der Erstellung des Google-Kontos seine derzeitige
+                     			E-Mail-Adresse eingeben. Wechselt der Benutzer nach Eingabe der E-Mail-Adresse
+                     zum nächsten
+                     			Eingabefeld, validiert das System automatisch die eingegebene Adresse und zeigt
+                     bei ungültigen
+                     			Eingabewerten einen spezifischen Hinweis an (im Bild führt der Eingabewert „info“example.org“
+                     zu
+                     			dem Hinweis „Vergessen Sie nicht das @-Zeichen.“).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/direktevalidierung-google.png" title="Direkte Validierung der eingegebenen E-Mail-Adresse bei Google"><img src="../img/direktevalidierung-google.png" width="100%" alt="Direkte Validierung der eingegebenen E-Mail-Adresse bei Google"></img></a><br></br>Direkte Validierung der eingegebenen E-Mail-Adresse bei Google
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Nutzungssituationen, in denen ungeübte Benutzer, für die eine Hilfestellung bei der
+                        				Dateneingabe notwendig und angebracht erscheint, mit dem System arbeiten
+                        			
+                     </li>
+                     			
+                     <li>Dialoge, die mehrere zu validierende Eingabewerte verlangen (z. B. Formulare)</li>
+                     			
+                     <li>Freitext-Eingaben in Formaten, die komplex oder für Benutzer ungewohnt sind</li>
+                     			
+                     <li>Eingaben, bei denen die Eingabewerte ohne für den Benutzer spürbare Verzögerung geprüft
+                        				werden können
+                        			
+                     </li>
+                     			
+                     <li>Eingaben, bei denen fehlerhafte Eingabewerte nicht automatisch korrigiert werden können,
+                        				z.&nbsp;B. da der korrekte – vom Benutzer beabsichtigte – Eingabewert nicht bestimmt
+                        werden kann
+                        				(z.&nbsp;B. die Eingabe von E-Mail-Adressen)
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td> Direkte Validierung unterstützt Benutzer auf einfache und verständliche Weise bei
+                  der
+                  		Eingabe gültiger Daten. Benutzer erkennen fehlerhafte Eingaben unmittelbar und können
+                  diese rasch
+                  		korrigieren. Durch spezifische, konstruktive Hinweise darauf, welche Eingaben das
+                  System erwartet,
+                  		wird die Lernförderlichkeit des Systems erhöht. Durch die unmittelbare Rückmeldung
+                  werden der
+                  		zeitliche Abstand zwischen Dateneingabe, Rückmeldung und ggf. Korrektur durch den
+                  Benutzer
+                  		minimiert und so Kontextwechsel auf Benutzerseite vermieden: Benutzer erkennen sofort,
+                  nicht erst
+                  		nach weiteren Arbeitsschritten, wenn sie ihre Eingaben verändern müssen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Jede Form der Validierung benötigt Zeit. Die direkte Validierung von Eingabewerten
+                     kann deshalb
+                     			zu für den Benutzer spürbaren und somit unerwünschten Verzögerungen bei der Eingabe
+                     führen, wenn
+                     			die Validierung längere Zeit benötigt (z. B., wenn für die Validierung Daten von
+                     einem Server
+                     			abgefragt werden müssen). In diesem Fall ist die Validierung nach Abschluss der
+                     Eingabe einer
+                     			Validierung während der Eingabe vorzuziehen.
+                     		
+                  </p>
+                  		
+                  <p>Bei bewusst unvollständigen oder fehlerhaften Eingaben, die später noch vervollständigt
+                     werden
+                     			sollen, können Benutzer Warnhinweise als unnötig und störend empfinden. In diesem
+                     Fall sollten
+                     			auch ungültige Eingabewerte vom System akzeptiert und für die spätere Bearbeitung
+                     gespeichert
+                     			werden.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="nachsichtigesformat.html">Nachsichtiges Format</a></strong></p>
+                  <p>Das System kann Benutzern erlauben, Eingabewerte in verschiedenen Formaten
+                     			einzugeben, und die Eingabewerte automatisch korrigieren oder ergänzen. Bei Kombination
+                     mit
+                     			direkter Validierung muss die Validierung nicht die tatsächlichen Eingabewerte,
+                     sondern die vom
+                     			System angepassten Eingabewerte prüfen. Analog zum Validierungsergebnis kann das
+                     System den
+                     			korrigierten Eingabewert anzeigen, um Benutzer auf die „Interpretation“ ihrer Eingabe
+                     			hinzuweisen.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="autovervollstaendigung.html">Auto-Vervollständigung</a></strong></p>
+                  <p> Um Benutzer dabei zu unterstützen, gültige Eingabewerte einzugeben, kann das System
+                     			automatisch gültige und geeignete Vorschläge machen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Eingaben des Benutzers, für die bestimmte Format- oder inhaltliche Kriterien
+                     			gelten.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Können und sollen die Eingabewerte direkt validiert werden?</li>
+                     			
+                     <li>Welche Kriterien gelten für die Eingabewerte jeweils?</li>
+                     			
+                     <li>Existieren Klassen von Eingaben, für die einheitliche Kriterien gelten und die im
+                        System
+                        				mehrfach vorkommen (z. B. Datumswerte, E-Mail-Adressen)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p> Überlege, zu welchem Zeitpunkt die Validierung stattfinden soll.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Soll die Validierung direkt während der Eingabe oder erst nach Abschluss der Eingabe
+                        				stattfinden?
+                        			
+                     </li>
+                     			
+                     <li>Sind verschiedene Varianten erforderlich?</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Direkte Validierung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung des Validierungsergebnisses (bei gültigen
+                              				bzw. ungültigen Eingabewerten)
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Das System soll bei ungültigen Werten direkt neben dem Eingabefeld ein Fehler-Symbol
+                              				anzeigen.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Validierungszeitpunkt</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe des Zeitpunkts, zu dem die Validierung erfolgen soll.</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Die Validierung soll unmittelbar während der Eingabe erfolgen.
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Direkte Validierung
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Direkte Validierung</span><br></br><div class="spec-template-description">Das System soll Eingaben, die ein Benutzer in diesem Schritt macht, direkt
+                              				validieren.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Gültige Werte</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Kriterien für gültige Eingabewerte</div>
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Hinweise</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Hinweise, die den das System bei ungültigen Eingaben anzeigen soll (ggf. abhängig
+                                 					von der Art des Fehlers).
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.014+02:00
+      </div>
+   </body>
+</html>

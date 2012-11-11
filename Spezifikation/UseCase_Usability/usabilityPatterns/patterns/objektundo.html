@@ -1,0 +1,291 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Objektbezogenes Undo</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Objektbezogenes Undo</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Objektbezogenes Undo</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten Aktionen rückgängig machen, die sie für ein Objekt versehentlich
+                  oder
+                  		irrtümlich ausgeführt haben oder deren Resultate nicht ihren Erwartungen entsprechen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Erlaube Benutzern, ausgeführte, objektbezogene Aktionen rückgängig zu machen und den
+                        				vorigen Zustand des Objekts wiederherzustellen.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Die objektbezogene Undo-Möglichkeit gleicht in weiten Teilen dem
+                     			<a href="globalundo.html">Globalen Undo</a>
+                     			. Allerdings wird beim objektbezogenen Undo für verschiedene Datenobjekte, die
+                     Benutzer mit dem
+                     			System verwalten, jeweils eine eigene Undo-Historie verwendet. Dadurch können Benutzer
+                     Aktionen
+                     			für einzelne Objekte rückgängig machen, unabhängig von zwischenzeitlich auf anderen
+                     Objekten
+                     			ausgeführten Aktionen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Interaktive Systeme, die atomare, für den Benutzer erkennbar separierte Aktionen auf
+                        				einzelnen Datenobjekten erlauben, z.&nbsp;B. Verwaltungsoperationen (Erzeugen, Löschen,
+                        Ändern etc.)
+                        			
+                     </li>
+                     			
+                     <li>Nutzungssituationen, bei denen Benutzer abwechselnd verschiedene Datenobjekte verwalten
+                        und
+                        				gegebenenfalls Änderungen für einzelne Objekte rückgängig machen müssen
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Die Möglichkeit, Aktionen rückgängig zu machen, nimmt Benutzern die Furcht vor einer
+                     			Fehlbedienung des Systems und ermutigt sie, die vom System angebotenen Aktionen
+                     ausprobieren
+                     			(explorative Nutzung).
+                     		
+                  </p>
+                  		
+                  <p>Das Wissen darum, das Fehler nicht dauerhaft sind, sondern per Undo einfach korrigiert
+                     werden
+                     			können, lässt Benutzer entspannter und zufriedener arbeiten. Die schnelle Fehlerkorrektur
+                     per
+                     			Undo erhöht zudem die Benutzungseffizienz.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>
+                     			Beim objektbezogenen Undo verwaltet das System mehrere Undo-Historien, innerhalb
+                     derer Benutzer
+                     			Aktionen rückgängig machen und ggf. wiederherstellen können. Für Benutzer kann
+                     dies verwirrend
+                     			sein, wenn sie z.B. eine Aktion auf einem Datenobjekt ausführen, dann zu einem
+                     anderen
+                     			Datenobjekt wechseln und dort die Möglichkeit vermissen, die gerade ausgeführte
+                     Aktion
+                     			zurückzunehmen (da die Undo-Historie des nun aktiven Datenobjekts leer ist). Ein
+                     			<a href="globalundo.html">globales Undo</a>
+                     			mit einer einzelnen Undo-Historie ist leichter verständlich, allerdings nicht so
+                     flexibel wie das
+                     			objektbezogene Undo.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="globalundo.html">Globales Undo</a></strong></p>
+                  <p>Alternativ zur objektbezogenen Undo-Möglichkeit kann auch ein globales Undo angeboten
+                     			werden, bei dem eine einzelne Undo-Historie für alle Aktionen geführt wird.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="warnung.html">Warnung</a></strong></p>
+                  <p> In nahezu allen Systemen können Benutzer Aktionen ausführen, die aus technischen
+                     			oder konzeptuellen Gründen nicht rückgängig gemacht werden können. Benutzer sollten
+                     darauf durch
+                     			eine entsprechende Warnung explizit hingewiesen werden, damit sie nicht irrtümlich
+                     davon
+                     			ausgehen, auch diese Aktionen per Undo zurücknehmen zu kömmen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere die Arten von Datenobjekten, die Benutzer mit dem System verwalten (z.
+                     B.
+                     			verschiedene fachliche Datensätze).
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Für Objekte welcher dieser Arten soll jeweils eine eigene Undo-Historie geführt werden?</li>
+                     		
+                  </ul>
+                  		
+                  <p>Identifiziere Aktionen, die rückgängig gemacht werden können.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche dieser Aktionen verändern Daten oder wesentliche Einstellungen, welche lediglich
+                        				Darstellungsparameter?
+                        			
+                     </li>
+                     			
+                     <li>Welche dieser Aktionen können von Benutzern nur mit größerem Aufwand manuell zurückgenommen
+                        				werden (z.&nbsp;B. durch das erneute Eingeben eines versehentlich gelöschten Datensatzes)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Objektbezogenes Undo
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Objektarten</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Arten von Objekten, bei denen für jedes Objekt eine eigene Undo-Historie
+                              				geführt werden soll, um Benutzer ein objektbezogenes Undo zu ermöglichen
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Fachliche Datensätze mit objektbezogener Undo-Möglichkeit: Kunden, Rechnungen, Aufträge
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Undo-Verhalten</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Undo-Strategie: Länge der Undo-Historie (max. Anzahl zurückzunehmender
+                              				Aktionen), Einzel-Undo oder Mehrfach-Undo (Rückgängigmachen mehrerer Aktionen
+                              auf einmal)
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Lineares Undo: Benutzer sollen die jeweils zuletzt ausgeführte Aktion auf einem Objekt
+                              				rückgängig machen können. Die Undo-Historie für jedes Objekt soll maximal die
+                              10 zuletzt
+                              				ausgeführten Aktionen umfassen.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Redo-Verhalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe der Redo-Strategie: Einzel- oder Mehrfach-Redo. Nur notwendig, falls
+                              				Benutzern eine Redo-Möglichkeit angeboten werden soll.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Benutzer sollen die jeweils zuletzt zurückgenommene Aktion einzeln wiederherstellen
+                              				können.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Mehrbenutzerverhalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe des Undo-/Redo-Verhaltens bei Mehrbenutzersystemen, d. h. bei paralleler
+                              				Ausführung von Aktionen durch mehrere Benutzer (ggf. auf denselben Daten)
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Bei paralleler Bearbeitung der Datensätze durch mehrere Benutzer sollen Benutzer eigene
+                              				und Aktionen anderer Benutzer rückgängig machen können.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Objektbezogenes Undo
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Objekt-Undo</span><br></br><div class="spec-template-description">Benutzer soll diesen Ablauf objektbezogen rückgängig machen können.</div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Objektart</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der Art des Objekts, das durch diesen Ablauf verändert wird.</div>
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Bedingung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe der Bedingung, unter der der Benutzer den Ablauf rückgängig machen kann.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Das Dokument wurde zwischenzeitlich nicht gespeichert.
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.243+02:00
+      </div>
+   </body>
+</html>

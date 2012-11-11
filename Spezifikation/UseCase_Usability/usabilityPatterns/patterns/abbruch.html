@@ -1,0 +1,191 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Abbruch</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Abbruch</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Abbruch</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten die Aktion, die sie gerade ausführen, abbrechen, ohne Änderungen
+                  zu
+                  		übernehmen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Erlaube Benutzern, Aktionen abzubrechen.</strong>
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Verwirf dabei alle Änderungen, die in den bisherigen Schritten der Aktion gemacht
+                     wurden. Bei
+                     			Abbruch einer Aktion soll diese aus Sicht des Benutzers folgenlos bleiben, System
+                     und Daten
+                     			sollen sich also möglichst im Zustand
+                     			<em>vor</em>
+                     			Ausführung der (abgebrochenen) Aktion befinden.
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Wenn beim Abbruch einer Aktion umfangreiche Eingaben des Benutzers verworfen werden,
+                     weise den
+                     			Benutzer darauf hin und lasse den Abbruch bestätigen, z. B. durch eine
+                     			<a href="warnung.html">Warnung</a>
+                     			.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Mozilla Firefox 4</em></p>
+                  <p>Der Web-Browser Firefox erlaubt Benutzern, Aktionen abzubrechen. Die Abbildung zeigt
+                     			den Dialog zum Import von Daten aus anderen Web-Browsern. Der Import kann vom Benutzer
+                     			abgebrochen werden, ohne dass tatsächlich Daten importiert werden.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/abbruch-firefox1.png" title="Abbruch-Möglichkeit im Import-Assistent in Firefox"><img src="../img/abbruch-firefox1.png" width="100%" alt="Abbruch-Möglichkeit in Firefox-Dialog"></img></a><br></br>Abbruch-Möglichkeit in Firefox-Dialog
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Aktionen, bei denen ein Dialog eingesetzt wird: die Möglichkeit zum Abbruch ist für
+                        die
+                        				meisten Aktionen, bei denen Benutzer Eingaben in einem aktionsbezogenen Dialog
+                        vornehmen,
+                        				sinnvoll
+                        			
+                     </li>
+                     			
+                     <li>
+                        				Aktionen, die Benutzer nicht auf einfache Weise (z. B. per
+                        				<a href="globalundo.html">Undo</a>
+                        				) rückgängig machen können.
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p>Die Möglichkeit zum Abbruch der aktuellen Aktion nimmt Benutzern die Furcht vor einer
+                     			Fehlbedienung des Systems. Versehentlich aufgerufene Aktionen können folgenlos
+                     abgebrochen
+                     			werden.
+                     		
+                  </p>
+                  		
+                  <p> Benutzer erhalten durch die Abbruchmöglichkeit eine größere Kontrolle über den
+                     			Interaktionsablauf. Die Steuerbarkeit des Systems wird somit aus Benutzersicht
+                     erhöht.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Abhängigkeit
+                        						</span>
+                     			&nbsp;<strong><a href="warnung.html">Warnung</a></strong></p>
+                  <p>Wenn Benutzer durch den Abbruch einer Aktion umfangreiche Eingaben oder
+                     			Zwischenresultate einer langlaufenden Verarbeitung verwerfen, sollte das System
+                     eine
+                     			entsprechende Warnung anzeigen und Benutzer bitten, den Abbruch zu bestätigen.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, die einen Dialog für Eingaben verwenden und die Benutzer abbrechen
+                     			können sollen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Abbruch
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Abbruch</span><br></br><div class="spec-template-description">Benutzern sollen diesen Ablauf abbrechen können.</div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Ablauf
+                                 				</span><span class="spec-template-name">Alternativer Ablauf bei Abbruch</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">
+                                 					Beschreibung des alternativen Ablaufs, wenn der Benutzer den ursprünglichen Ablauf
+                                 abbricht.
+                                 					Nur notwendig, wenn der Abbruch zusätzliche Interaktionsschritte verlangt, etwa
+                                 die Anzeige
+                                 					einer Warnung.
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:24.86+02:00
+      </div>
+   </body>
+</html>

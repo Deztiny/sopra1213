@@ -1,0 +1,295 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Fortschrittsanzeige</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Fortschrittsanzeige</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Fortschrittsanzeige</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Wenn das System eine Aktion ausführt, die längere Zeit dauert, möchten wartende Benutzer
+                  		wissen, wie die Ausführung voranschreitet und wie lange sie noch dauern wird.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Zeige den aktuellen Fortschritt bei der Ausführung der Aktion und ermögliche Benutzern
+                        				abzuschätzen, wie lange die Ausführung noch dauern wird.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>Der Fortschritt kann z. B. durch einen Fortschrittsbalken oder eine prozentuale Angabe
+                     			dargestellt werden. Wenn die ausgeführte Aktion aus mehreren Einzelschritten besteht,
+                     sollten die
+                     			bereits abgeschlossenen und der aktuell ausgeführte Verarbeitungsschritt angezeigt
+                     werden. Mit
+                     			einer animierten Darstellung kann verdeutlicht werden, dass die Ausführung der
+                     Aktion noch aktiv
+                     			und nicht abgeschlossen ist.
+                     		
+                  </p>
+                  		
+                  <p>Wenn die Ausführung einer Aktion im Einzelfall deutlich länger dauert als vom Benutzer
+                     			erfahrungsgemäß zu erwarten ist, sollte das System den Grund für die längere Verarbeitungsdauer
+                     			anzeigen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>Ein Programm zur Verwaltung von Aktiendepots bietet Benutzern die Möglichkeit,
+                  		aktuelle Aktienkurse für vorhandene Depotwerte durch Abfrage eines Kursanbieters
+                  im Internet zu
+                  		ermitteln. Diese Abfrage benötigt erfahrungsgemäß ca. eine Sekunde pro Aktienkurs,
+                  bei
+                  		umfangreichen Depots also längere Zeit. Während der Aktualisierung der Aktienkurse
+                  zeigt das
+                  		System deshalb einen Fortschrittsbalken an, der die Zahl der bereits ermittelten
+                  Aktienkurse im
+                  		Verhältnis zur Gesamtzahl zu ermittelnder Aktienkurse visualisiert. Auf diese Weise
+                  können
+                  		Benutzer den Fortschritt bei der Kursaktualisierung erkennen und außerdem abschätzen,
+                  wie lange
+                  		der Vorgang noch dauern wird.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Apple Safari 5 (Web-Browser): Laden einer Website</em></p>
+                  <p>Beim Laden einer Website zeigt Safari den Fortschritt des Ladevorgangs auf zweierlei
+                     			Weise an: durch einen Fortschrittsbalken im Hintergrund der Adresszeile und durch
+                     die Angabe der
+                     			bereits geladenen und noch zu ladenden Objekte (Seiten, Grafiken, Skripte etc.)
+                     in der
+                     			Statuszeile (im Beispiel „... wird geladen, 40 von 46 Objekten abgeschlossen“).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/fortschrittsanzeige-safari.png" title="Zweifache Fortschrittsanzeige in Safari beim Laden einer Website: Fortschrittsbalken in der Adresszeile, verbleibende Objekte in der Statuszeile"><img src="../img/fortschrittsanzeige-safari.png" width="100%" alt="Fortschrittsanzeige in Safari"></img></a><br></br>Fortschrittsanzeige in Safari
+                  </div><br style="clear:both;"></br><p><em>wget: Download von Dateien</em></p>
+                  <p>Das kommandozeilenbasierte Download-Werkzeug wget zeigt beim Download von Dateien
+                     			einen rudimentären Fortschrittsbalken mit prozentualer Angabe der Fertigstellung
+                     an.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/fortschrittsanzeige-wget.png" title="Fortschrittsanzeige beim Download einer Datei in wget"><img src="../img/fortschrittsanzeige-wget.png" width="100%" alt="Fortschrittsanzeige beim Download einer Datei in wget"></img></a><br></br>Fortschrittsanzeige beim Download einer Datei in wget
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Aktionen, für deren Ausführung das System längere Zeit benötigt</li>
+                     			
+                     <li>Langdauernde Aktionen, die mehrere Verarbeitungsschritte umfassen</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Benutzern, die auf das Resultat der Aktion warten, wird durch die Fortschrittsanzeige
+                  		vermittelt, dass die Ausführung aktiv und noch nicht abgeschlossen ist. Der aktuelle
+                  Zustand des
+                  		Systems ist für Benutzer auf diese Weise erkennbar, und sie können abschätzen, wie
+                  lange sie noch
+                  		warten müssen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>Der angezeigte Fortschritt muss Benutzern eine realistische Einschätzung des tatsächlichen
+                  		Verarbeitungsfortschritts und der verbleibenden Verarbeitungsdauer ermöglichen.
+                  Kann dieser
+                  		Zusammenhang nicht hergestellt werden – etwa, wenn die ersten 50% nur wenige Sekunden
+                  benötigen,
+                  		die verbleibenden 50% dann aber mehrere Minuten –, verhält sich das System nicht
+                  		erwartungskonform; Benutzer werden so irritiert oder verärgert.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="hintergrundausfuehrung.html">
+                           		Ausführung im Hintergrund</a></strong></p>
+                  <p>Bei der Hintergrundausführung können Benutzern langdauernde Verarbeitungsschritte
+                     im
+                     			Hintergrund auszuführen lassen und währenddessen zunächst normal mit dem System
+                     weiterzuarbeiten.
+                     			Eine nichtmodale Fortschrittsanzeige kann Benutzer dabei über den Verarbeitungsfortschritt
+                     			informieren.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Die Fortschrittsanzeige unterstützt Benutzer bei der Einschätzung der verbleibenden
+                     			Verarbeitungsdauer. Wenn die Verarbeitung aus Sicht der Benutzer zu lange dauert,
+                     sollten sie die
+                     			Möglichkeit haben, die Verarbeitung abzubrechen.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="vorschau.html">Vorschau</a></strong></p>
+                  <p>
+                     			Falls die Ausführung einer Aktion längere Zeit benötigt, kann eine
+                     			<a href="vorschau.html">Vorschau</a>
+                     			auf die Resultate Benutzern helfen einzuschätzen, ob sie die Aktion tatsächlich
+                     ausführen
+                     			möchten.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="inarbeit.html">Verarbeitungsanzeige</a></strong></p>
+                  <p>
+                     			Falls der Fortschritt einer Aktion nicht bestimmt oder sinnvoll dargestellt werden
+                     kann, können
+                     			Benutzer alternativ auch mit einer
+                     			<a href="inarbeit.html">Verarbeitungsanzeige</a>
+                     			darüber informiert werden, dass die Aktion noch ausgeführt wird.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, für deren Ausführung das System längere Zeit benötigt.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Wie lange dauert die Ausführung der Aktion in einem typischen Szenario?</li>
+                     			
+                     <li>Kann der Verarbeitungsfortschritt anzeigt werden?</li>
+                     			
+                     <li>Wie lässt sich der Fortschritt bestimmen bzw. berechnen, welche Zwischenschritte existieren?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p> Überlege, wie die Fortschrittsanzeige für verschiedene Aktionen einheitlich dargestellt
+                     werden
+                     			kann.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Kann ein einheitlicher Dialog verwendet werden, oder kann der Fortschritt stets an
+                        derselben
+                        				Stelle dargestellt werden (z.&nbsp;B. in einer Statuszeile)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Fortschrittsanzeige
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung des Verarbeitungsfortschritts</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Darstellung als Fortschrittsbalken mit prozentualer Fortschrittsangabe. Positionierung
+                              				im Dialog, bei Ausführung im Hintergrund in der Statuszeile des Hauptfensters.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Fortschrittsanzeige
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Fortschrittsanzeige</span><br></br><div class="spec-template-description">Während der Ausführung dieses Schritts soll das System den aktuellen Fortschritt
+                              				anzeigen.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Berechnung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Vorschrift für die Berechnung des Fortschritts der Aktion</div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Prozentualer Anteil geladener Daten
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.08+02:00
+      </div>
+   </body>
+</html>

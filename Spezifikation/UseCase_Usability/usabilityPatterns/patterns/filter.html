@@ -1,0 +1,251 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Filter</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Filter</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Filter</strong></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten innerhalb einer großen Datenmenge die Übersicht bewahren und nur
+                  solche
+                  		Daten anzeigen, die bestimmte Kriterien erfüllen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Ermögliche Benutzern, dargestellte Daten nach eigenen Kriterien zu filten.</strong>
+                     		
+                  </p>
+                  		
+                  <p>Ermögliche Benutzern, Filterkriterien für die Darstellung größerer Datenmengen (z.&nbsp;B.
+                     Listen
+                     			von Datensätzen) selbst festzulegen. Nur Daten, die den Filterkriterien genügen,
+                     werden bei
+                     			aktivem Filter angezeigt.
+                     		
+                  </p>
+                  		
+                  <p>Biete eine einfache Möglichkeit, die Filterung der Daten an- und auszuschalten. Wenn
+                     der Filter
+                     			aktiv ist, sollte dies für Benutzer deutlich erkennbar sein, da in diesem Fall
+                     nicht alle Daten,
+                     			sondern ggf. nur eine Teilmenge der gesamten Datenmenge angezeigt wird.
+                     		
+                  </p>
+                  		
+                  <p>Die möglichen Filterkriterien sollten sich nach der Art der dargestellten Daten richten.
+                     Bei
+                     			Datensätzen sollten Benutzer Filterkriterien für die Werte einzelner Datenfelder
+                     festlegen können
+                     			(z.&nbsp;B. bei Adressdatensätzen ein Filterkriterium für das Datenfeld Land, für das
+                     Benutzer die
+                     			anzuzeigenden Länder angeben). Für typische Aufgaben der Benutzer können Filterkriterien
+                     auch
+                     			vordefiniert und sinnvoll benannt werden (z.&nbsp;B. ein Kriterium 'Volljährige Personen'
+                     für die
+                     			Anzeige von Personendatensätzen von Personen, deren Alter 18 oder älter ist). Für
+                     erfahrene
+                     			Benutzer sollte die Möglichkeit angeboten werden, mehrere Filterkriterien zu kombinieren
+                     (z.&nbsp;B.
+                     			UND- oder ODER-verknüpfen).
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>In einem Online-Banking-System können Benutzer die Kontobewegungen (Überweisungen,
+                  		Abbuchungen etc.) ihres Kontos in Tabellenform anzeigen lassen. Da es sich dabei
+                  um eine große
+                  		Zahl von Kontobewegungen handeln kann, können Benutzer als Filterkriterium einen
+                  Zeitraum angeben,
+                  		für den die Kontobewegungen angezeigt werden sollen. Kontobewegungen außerhalb des
+                  angegebenen
+                  		Zeitraums blendet das System aus. Auf diese Weise wird die Übersichtlichkeit der
+                  Darstellung
+                  		erhöht und die Benutzer finden schneller die Informationen, die sie suchen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Amazon.de Online-Shop</em></p>
+                  <p>Benutzer können die angezeigten Artikel im Online-Shop Amazon.de nach verschiedenen
+                     			Kriterien filtern. Das System bietet Benutzern dabei sowohl vordefinierte, zu den
+                     jeweiligen
+                     			Produkten passende Filterkriterien an (im Bild: Filter ‚Anbieter‘) als auch frei
+                     definierbare
+                     			Filterkriterien (im Bild: Filter ‚Preis‘) an. Mehrere Filterkriterien können kombiniert
+                     werden
+                     			(UND-Verknüpfung).
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/filter-amazon.png" title="Filterkriterien für die Produktanzeige bei Amazon.de"><img src="../img/filter-amazon.png" width="100%" alt="Filterkriterien für die Produktanzeige bei Amazon.de"></img></a><br></br>Filterkriterien für die Produktanzeige bei Amazon.de
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Arbeitsaufgaben, bei denen Benutzer umfangreiche Datenmengen verwalten und anzeigen
+                        lassen.
+                        			
+                     </li>
+                     			
+                     <li>Arbeitsaufgaben, für die Benutzer einzelne Daten aus umfangreichen Datenmengen benötigen</li>
+                     			
+                     <li>Darstellungen größerer Datenmengen als Liste, Tabelle oder Baumstruktur</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Frei definierbare Filterkriterien erlauben Benutzern, die Darstellung umfangreicher
+                  		Datenmengen zu beeinflussen und so das System an ihre eigenen Arbeitsaufgaben anzupassen.
+                  Dies
+                  		erhöht sowohl die Benutzungseffizienz als auch die Zufriedenheit der Benutzer.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>Bei der Darstellung gefilterter Daten muss für Benutzer deutlich erkennbar sein, dass
+                  ein
+                  		Teil der Daten vom System ausgeblendet wird. Andernfalls besteht die Gefahr, dass
+                  Benutzer die
+                  		angezeigten Daten als „vollständig“ betrachten, falsche Schlüsse ziehen oder irritiert
+                  sind, weil
+                  		sie vorhandene, aber ausgeblendete Daten vermissen. In jedem Fall muss das System
+                  Benutzern
+                  		deshalb eine einfache und gut sichtbare Möglichkeit bieten, den Filter auszuschalten
+                  und alle
+                  		Daten anzuzeigen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, bei denen größere Datenmengen angezeigt werden (z.&nbsp;B. Listen
+                     oder
+                     			Tabellen mit mehr als 20 Einträgen).
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Nach welchen Kriterien können die Daten gefiltert werden?</li>
+                     			
+                     <li>Lassen sich aus den typischen Aufgaben der Benutzer häufig verwendete Filterkriterien
+                        				ableiten, die vordefiniert werden sollten?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Filter
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung der (aktiven und möglichen) Filterkriterien
+                              				bei Anzeige umfangreicher Datenmengen. Nur sinnvoll, wenn für verschiedene Aktionen
+                              jeweils eine
+                              				ähnliche Filterung (z. B. für Datenobjekte desselben Typs) angeboten wird.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Filter
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Filter</span><br></br><div class="spec-template-description">Das System soll dem Benutzer eine Filtermöglichkeit für die in diesem Ablauf
+                              				dargestellten Datenmengen anbieten.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Filterkriterien</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe der Kriterien, anhand derer der Benutzer die Daten filtern kann. Ggf. Angabe
+                                 					der Kombinierbarkeit verschiedener Kriterien.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Filterung nach Preis: bis 20 Euro, 21-50 Euro, über 50 Euro
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                           <div class="spec-template-extensions"><span class="spec-template-marker">Erweiterung</span><span class="spec-template-marker spec-template-annotation-target">
+                                 				+
+                                 				
+                                 					Schritt
+                                 				</span><span class="spec-template-name">Filterung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe der Schritte im Ablauf, in denen der Benutzer Filterkriterien auswählt und
+                                 					das System die dargestellten Daten entsprechend filtert.
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.04+02:00
+      </div>
+   </body>
+</html>

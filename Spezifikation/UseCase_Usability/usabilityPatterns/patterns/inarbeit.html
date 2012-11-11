@@ -1,0 +1,284 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Verarbeitungsanzeige</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Verarbeitungsanzeige</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Verarbeitungsanzeige</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Processing Page</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzern möchten erkennen können, ob das System eine Aktion ausführt.</td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Zeige Benutzern, dass das System gerade eine Aktion ausführt, die noch nicht
+                        				abgeschlossen ist.
+                        			</strong>
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Informiere Benutzer, dass das System momentan eine Aktion ausführt und noch etwas
+                     Zeit für die
+                     			Ausführung benötigt. Wenn der tatsächliche Fortschritt der ausgeführten Aktion
+                     dargestellt werden
+                     			kann, verwende eine
+                     			<a href="fortschrittsanzeige.html">Fortschrittsanzeige</a>
+                     			. Andernfalls verwende z. B. eine animierte Darstellung, um die noch laufende Ausführung
+                     der
+                     			Aktion zu betonen, auch wenn der Fortschritt und die noch verbleibende Dauer nicht
+                     angezeigt
+                     			werden können.
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Verwende eine Verarbeitungsanzeige sowohl in Situationen, in denen Benutzer auf
+                     den Abschluss der
+                     			Aktion warten müssen, als auch in Situationen, in denen die Aktion
+                     			<a href="hintergrundausfuehrung.html">im Hintergrund ausgeführt</a>
+                     			wird und Benutzer weiter mit dem System arbeiten können.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Flugsuche auf lufthansa.de</em></p>
+                  <p>Die Suche nach verfügbaren Flügen auf der Internetseite der Fluggesellschaft
+                     			Lufthansa dauert einige Sekunden. Während dieser Zeit zeigt das System eine animierte
+                     			Verarbeitungsanzeige, um Benutzer zu informieren, dass die Suche durchgeführt wird.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/verarbeitungsanzeige-lufthansa.png" title="Verarbeitungsanzeige bei der Suche nach Flügen (mit animiertem Flugzeug-Symbol)"><img src="../img/verarbeitungsanzeige-lufthansa.png" width="100%" alt="Verarbeitungsanzeige bei der Suche nach Flügen"></img></a><br></br>Verarbeitungsanzeige bei der Suche nach Flügen
+                  </div><br style="clear:both;"></br><p><em>Microsoft AutoUpdate für Mac</em></p>
+                  <p>AutoUpdate sucht nach Aktualisierungen für installierte Microsoft-Office-Anwendungen.
+                     			Die Abfrage der Update-Server dauert einige Sekunden. Während dieser Zeit zeigt
+                     AutoUpdate eine
+                     			animierte Verarbeitungsanzeige und informiert Benutzer auf diese Weise, dass die
+                     			Aktualisierungsprüfung noch läuft.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/verarbeitungsanzeige-autoupdate.png" title="Verarbeitungsanzeige bei der Suche nach Aktualisierungen (mit animiertem Verarbeitungsbalken)"><img src="../img/verarbeitungsanzeige-autoupdate.png" width="100%" alt="Verarbeitungsanzeige bei der Suche nach Aktualisierungen"></img></a><br></br>Verarbeitungsanzeige bei der Suche nach Aktualisierungen
+                  </div><br style="clear:both;"></br><p><em>Youtube</em></p>
+                  <p>Die Video-Plattform YouTube zeigt beim Ladens eines Videos ein animiertes Symbol
+                     			(kleine Kreise mit Farbverlauf, die um einen Mittelpunkt rotieren) dar, um Benutzer
+                     darüber zu
+                     			informieren, dass das Video gerade geladen wird.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/verarbeitungsanzeige-youtube.png" title="Verarbeitungsanzeige beim Laden eines Videos bei YouTube"><img src="../img/verarbeitungsanzeige-youtube.png" width="100%" alt="Verarbeitungsanzeige beim Laden eines Videos bei YouTube"></img></a><br></br>Verarbeitungsanzeige beim Laden eines Videos bei YouTube
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Aktionen, für deren Ausführung das System längere Zeit benötigt</li>
+                     			
+                     <li>Aktionen, für die der Fortschritt der Ausführung nicht bestimmt werden kann</li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Eine Verarbeitungsanzeige informiert Benutzer über den aktuellen Zustand des Systems.
+                  		Benutzer erkennen, dass Sie in diesem Moment keine Eingaben machen, sondern die
+                  Ausführung der
+                  		Aktion abwarten müssen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Eine Verarbeitungsanzeige sollte nur bei kurzer Verarbeitungsdauer (im Sekundenbereich)
+                     			verwendet werden. Bei längerer Verarbeitungsdauer und fehlendem Hinweis auf den
+                     Fortschritt und
+                     			und die verbleibende Verarbeitungsdauer können Benutzer sonst nicht erkennen, ob
+                     die Verarbeitung
+                     			noch stattfindet oder ob das System aufgrund eines Fehlers nicht mehr reagiert.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="fortschrittsanzeige.html">
+                           		Fortschrittsanzeige</a></strong></p>
+                  <p>Wenn der Fortschritt eines langdauernden Verarbeitungsschritts sinnvoll berechnet
+                     und
+                     			dargestellt werden kann, sollte anstelle einer Verarbeitungsanzeige eine echte
+                     Forschrittsanzeige
+                     			verwendet werden. Diese informiert Benutzer nicht nur darüber, dass das System
+                     noch arbeitet,
+                     			sondern erlaubt auch eine Abschätzung, wie lange der Verarbeitungsschritt noch
+                     dauern wird.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="hintergrundausfuehrung.html">
+                           		Ausführung im Hintergrund</a></strong></p>
+                  <p>Bei der Hintergrundausführung können Benutzern langdauernde Verarbeitungsschritte
+                     im
+                     			Hintergrund auszuführen lassen und währenddessen zunächst normal mit dem System
+                     weiterzuarbeiten.
+                     			Eine Verarbeitungsanzeige kann Benutzer dabei auf die noch laufende Verarbeitung
+                     im Hintergrund
+                     			hinweisen.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Eine Abbruch-Möglichkeit für langdauernde Verarbeitungsschritte erlaubt Benutzern,
+                     			die Verarbeitung abzubrechen, wenn sie zu lange dauert.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="vorschau.html">Vorschau</a></strong></p>
+                  <p>
+                     			Falls die Ausführung einer Aktion längere Zeit benötigt, kann eine
+                     			<a href="vorschau.html">Vorschau</a>
+                     			auf die Resultate Benutzern helfen einzuschätzen, ob sie die Aktion tatsächlich
+                     ausführen
+                     			möchten.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, für deren Ausführung das System längere Zeit benötigt.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Wie lange dauert die Ausführung der Aktion in einem typischen Szenario?</li>
+                     			
+                     <li>
+                        				Kann der Verarbeitungsfortschritt bestimmt werden? Dann verwende besser eine
+                        				<a href="fortschrittsanzeige.html">Fortschrittsanzeige</a>
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p> Überlege, wie die Verarbeitungsanzeige für verschiedene Aktionen einheitlich dargestellt
+                     			werden kann.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Kann ein einheitlicher Dialog verwendet werden, oder kann die Verarbeitung stets an
+                        derselben
+                        				Stelle dargestellt werden (z.&nbsp;B. in einer Statuszeile)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Verarbeitungsanzeige
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung der Verarbeitungsanzeige</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Darstellung in einem modalen Dialog mit Hinweistext und animiertem Verarbeitungsbalken.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Verarbeitungsanzeige
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Verarbeitungsanzeige</span><br></br><div class="spec-template-description">Während der Ausführung dieses langdauernden Schritts soll das System die laufendende
+                              				Verarbeitung anzeigen.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.306+02:00
+      </div>
+   </body>
+</html>

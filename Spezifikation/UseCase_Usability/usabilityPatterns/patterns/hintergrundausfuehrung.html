@@ -1,0 +1,287 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Ausführung im Hintergrund</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Ausführung im Hintergrund</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Ausführung im Hintergrund</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Background Task</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten nicht auf die Ausführung einer langdauernden Aktion warten, sondern
+                  		währenddessen weiter mit dem System arbeiten.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Biete Benutzern an, langdauernde Aktionen im Hintergrund auszuführen.</strong>
+                     		
+                  </p>
+                  		
+                  <p>
+                     			Lasse Benutzer während der Ausführung der Aktion weiter mit dem System arbeiten
+                     und andere
+                     			Aktionen ausführen. Zeige dabei aber stets an, dass eine Aktion im Hintergrund
+                     ausgeführt wird.
+                     			Benutzer sollten die Möglichkeit haben, den Status und
+                     			<a href="Fortschrittsanzeige.html">Fortschritt</a>
+                     			der Ausführung zu erkennen.
+                     		
+                  </p>
+                  		
+                  <p>Benachrichtige Benutzer, wenn die Ausführung abgeschlossen oder eine Eingabe notwendig
+                     ist.
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>Benutzer können mit einem Web-Browser u.&nbsp;a. Dateien herunterladen und speichern. Ein
+                  		solcher Download kann, abhängig von der Dateigröße, längere Zeit dauern und wird
+                  deshalb im
+                  		Hintergrund ausgeführt. Benutzer können mit dem Web-Browser weiter im Web surfen
+                  und müssen nicht
+                  		den Abschluss des Downloads abwarten. Der Fortschritt des Downloads wird in der
+                  Statuszeile des
+                  		Browser-Fensters dargestellt; ein eingeblendeter Hinweis informiert Benutzer über
+                  den
+                  		erfolgreichen Abschluss des Downloads.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Google Chrome 8.0 (Mac OS X): Download von Dateien</em></p>
+                  <p>Der Web-Browser Chrome führt Downloads im Hintergrund aus. Aktive Downloads werden
+                     in
+                     			einer Statuszeile am unteren Rand des Browser-Fensters angezeigt; Benutzer können
+                     dort u.&nbsp;a. den
+                     			Fortschritt und die verbleibende Dauer des Downloads erkennen und z.&nbsp;B. auch über
+                     ein Menü den
+                     			Download abbrechen.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/hintergrundausfuehrung-chrome.png" title="Download im Hintergrund in Chrome"><img src="../img/hintergrundausfuehrung-chrome.png" width="100%" alt="Download im Hintergrund in Chrome"></img></a><br></br>Download im Hintergrund in Chrome
+                  </div><br style="clear:both;"></br><p><em>Eclipse IDE: Update-Prüfung im Hintergrund</em></p>
+                  <p>Die Entwicklungsumgebung Eclipse erlaubt Benutzern, die Suche nach
+                     			Software-Aktualisierungen im Hintergrund auszuführen und währenddessen weiter mit
+                     dem System zu
+                     			arbeiten. Da die Update-Prüfung häufig längere Zeit in Anspruch nimmt, bedeutet
+                     dies für Benutzer
+                     			einen erheblichen Komfortgewinn. Der Screenshot zeigt den Dialog, in dem Benutzer
+                     die
+                     			Hintergrundausführung starten können. Zusätzlich können Benutzer auch angeben,
+                     zukünftige
+                     			Update-Prüfungen standardmäßig im Hintergrund durchzuführen.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/hintergrundausfuehrung-eclipse.png" title="Update-Prüfung im Hintergrund in Eclipse"><img src="../img/hintergrundausfuehrung-eclipse.png" width="100%" alt="Update-Prüfung im Hintergrund in Eclipse"></img></a><br></br>Update-Prüfung im Hintergrund in Eclipse
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Aktionen, für deren Ausführung das System längere Zeit benötigt und die während der
+                        				Ausführung keine Interaktion mit dem Benutzer verlangen
+                        			
+                     </li>
+                     			
+                     <li>Aktionen, die das System unabhängig von anderen Aktionen im Hintergrund ausführen
+                        kann
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Die Ausführung langdauernder Aktionen im Hintergrund erlaubt Benutzern ein effizienteres
+                  		Arbeiten mit dem System: Benutzer müssen nicht auf das Ende der Ausführung warten,
+                  sondern können
+                  		parallel weiter mit dem System arbeiten.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>Die Ausführung einer Aktion im Hintergrund unterbricht in vielen Fällen eine
+                  		Dialoginteraktion zwischen Benutzer und System: das System erwartet zunächst keine
+                  weitere Eingabe
+                  		des Benutzers, sondern führt für längere Zeit einen Verarbeitungsschritt aus. Für
+                  Benutzer muss
+                  		deshalb leicht erkennbar sein, dass die gewünschte Aktion tatsächlich im Hintergrund
+                  ausgeführt
+                  		wird. Gleiches gilt, wenn der Verarbeitungsschritt abgeschlossen wurde; auch in
+                  diesem Fall müssen
+                  		Benutzer gut sichtbar und verständlich informiert werden, damit sie nicht länger
+                  als notwendig auf
+                  		die Ausführung der Aktion warten.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="abbruch.html">Abbruch</a></strong></p>
+                  <p>Abbruch von Aktionen, die im Hintergrund ausgeführt werden.</p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="fortschrittsanzeige.html">Fortschrittsanzeige</a></strong></p>
+                  <p>Der Fortschritt von im Hintergrund ausgeführten Aktionen kann durch eine
+                     			Fortschrittsanzeige angezeigt werden. Benutzer erhalten so auch einen Hinweis darauf,
+                     dass die
+                     			Hintergrundaktion noch aktiv ist.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="verarbeitungsanzeige.html">Verarbeitungsanzeige</a></strong></p>
+                  <p> Falls der Fortschritt der im Hintergrund ausgeführten Aktion nicht dargestellt
+                     			werden kann, sollten Benutzer zumindest mit einer Verarbeitungsanzeige darüber
+                     informiert werden,
+                     			dass aktuell im Hintergrund noch eine Aktion ausgeführt wird.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Identifiziere Aktionen, für deren Ausführung das System längere Zeit benötigt.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Wie lange dauert die Ausführung der Aktion in einem typischen Szenario?</li>
+                     			
+                     <li>Kann die Aktion unabhängig und ohne Benutzerinteraktion im Hintergrund ausgeführt
+                        werden?
+                        			
+                     </li>
+                     			
+                     <li>
+                        				Wie kann der
+                        				<a href="fortschrittsanzeige.html">Fortschritt</a>
+                        				der Ausführung bestimmt und dargestellt werden?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  		
+                  <p>Überlege, wie das System Benutzer über im Hintergrund ausgeführte Aktionen informieren
+                     soll.
+                     		
+                  </p>
+                  		
+                  <ul>
+                     			
+                     <li>Kann der Hinweis auf aktive Hintergrundaktionen stets an derselben Stelle dargestellt
+                        werden
+                        				(z.&nbsp;B. in einer Statuszeile)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Ausführung im Hintergrund
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe für die einheitliche Darstellung der im Hintergrund ausgeführten Aktionen.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Anzeige der im Hintergrund ausgeführten Aktionen in der Statuszeile.
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Ausführung im Hintergrund
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Hintergrundausführung</span><br></br><div class="spec-template-description">Das System soll den Verarbeitungsschritt auf Wunsch des Benutzers im Hintergrund
+                              				ausführen.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Standardmäßig im Hintergrund</span><span class="spec-template-marker spec-template-use-optional">Optional</span><div class="spec-template-description">Angabe, ob der Schritt standardmäßig automatisch im Hintergrund ausgeführt wird
+                                 					oder ob Benutzer die Hintergrundausführung zunächst explizit auswählen müssen.
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:25.197+02:00
+      </div>
+   </body>
+</html>

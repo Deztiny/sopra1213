@@ -1,0 +1,310 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Automatisches Speichern</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Automatisches Speichern</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Automatisches Speichern</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Auto Save</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten sich nicht selbst darum kümmern, dass Änderungen an Daten gespeichert
+                  		werden.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Speichere Änderungen automatisch.</strong>
+                     		
+                  </p>
+                  		
+                  <p>Wenn Benutzer längere Zeit eine Aktion ausführen (z. B.eine E-Mail verfassen), sollten
+                     			Änderungen in regelmäßigen zeitlichen Abständen (z. B. alle 10 Sekunden, jede Minute)
+                     automatisch
+                     			gespeichert werden. Alternativ kann die automatische Speicherung auch abhängig
+                     von der Ausführung
+                     			einzelner kürzerer Aktionen erfolgen (z. B. jedes Mal nach Durchführung bestimmter
+                     Änderungen)
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiel
+                  											
+               </th>
+               <td>
+                  <p><em>Google Mail: Automatisches Speichern von E-Mail-Entwürfen</em></p>
+                  <p>Google Mail speichert E-Mails, die Benutzer gerade verfassen, in kurzen Abständen
+                     			automatisch als Entwurf ab.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/autosave-gmail.png" title="Automatisches Speichern von E-Mails als Entwurf in Google Mail"><img src="../img/autosave-gmail.png" width="100%" alt="Automatisches Speichern in Google Mail"></img></a><br></br>Automatisches Speichern in Google Mail
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Nutzungssituationen, in denen Benutzer längere Zeit eine Aktion ausführen und dabei
+                        				Änderungen an Daten vornehmen
+                        			
+                     </li>
+                     			
+                     <li>Nutzungssituationen, in denen ein automatisches Speichern erwünscht und möglich ist,
+                        in denen
+                        				also z. B. keine Probleme beim zwischenzeitlichen Speichern unvollständiger Daten
+                        auftreten
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>
+                  		
+                  <p> Benutzer können sich auf die für sie wesentlichen Aufgaben konzentrieren und müssen
+                     nicht
+                     			daran denken, Änderungen zu speichern. Das System stellt sicher, dass Daten regelmäßig
+                     			gespeichert werden. Die Gefahr eines Datenverlusts z. B. bei einem versehentlichen
+                     Beenden des
+                     			Systems wird verringert.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Benutzer erwarten in vielen Nutzungssituationen eine explizite Möglichkeit zum Speichern
+                     von
+                     			Daten. Werden Daten vom System ausschließlich automatisch gespeichert, muss das
+                     System Benutzer
+                     			über die erfolgreiche Speicherung informieren. Andernfalls sind Benutzer in vielen
+                     Fällen
+                     			unsicher, ob ihre Daten tatsächlich gespeichert wurden, und das Vertrauen der Benutzer
+                     in das
+                     			System sinkt.
+                     		
+                  </p>
+                  		
+                  <p>Automatisches Speichern in dokumentbasierten Systemen (z. B. Textverarbeitung) kann
+                     dazu
+                     			führen, dass das System vorhandene Dokumente (in vielen Fällen Dateien) mit aktualisierten
+                     			Fassungen überschreibt, ohne das Benutzer dies wünschen. Entsprechende Systeme
+                     sollten das
+                     			automatische Speichern nur auf Wunsch der Benutzer aktivieren oder stattdessen
+                     eine
+                     			Sicherheitskopie verwenden.
+                     		
+                  </p>
+                  		
+                  <p>Beim automatischen Speichern muss darauf geachtet werden, dass der Vorgang Benutzer
+                     nicht bei
+                     			ihrer Arbeit mit dem System unterbricht oder ablenkt (z. B. in langsamen Systemumgebungen).
+                     Falls
+                     			doch, sollten Benutzer die Möglichkeit haben, das Speicherintervall anzupassen
+                     oder die
+                     			automatische Speicherung auszuschalten.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Zusammenspiel</th>
+               <td>
+                  <p><span class="pattern-relation-marker">
+                        							Alternative
+                        						</span>
+                     			&nbsp;<strong><a href="dokumentwiederherstellung.html">Dokumentwiederherstellung</a></strong></p>
+                  <p>
+                     			Wenn ein Datenverlust vermieden werden soll, aber Änderungen an den Daten nicht
+                     automatisch
+                     			gespeichert werden sollen (z.B. bei der Arbeit mit dateibasierten Dokumenten, bei
+                     denen
+                     			Änderungen nicht die ursprüngliche Datei überschreiben dürfen), kann alternativ
+                     eine
+                     			<a href="dokumentwiederherstellung.html">Dokumentwiederherstellung</a>
+                     			angeboten werden.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Ergänzung
+                        						</span>
+                     			&nbsp;<strong><a href="status.html">Systemstatus</a></strong></p>
+                  <p>Benutzer können in der Statusanzeige informiert werden, wenn Änderungen automatisch
+                     			gespeichert wurden.
+                     		
+                  </p>
+                  <p><span class="pattern-relation-marker">
+                        							Unverträglichkeit
+                        						</span>
+                     			&nbsp;<strong><a href="sicherheitskopie.html">Sicherheitskopie</a></strong></p>
+                  <p>Sicherheitskopien eignen sich für dateibasierte Dokumente, bei denen ein
+                     			automatisches Speichern nicht sinnvoll ist. Eine Kombination beider Lösungen erscheint
+                     nicht
+                     			angemessen, da für Benutzer nicht unterscheidbar ist, ob Sicherheitskopien auf
+                     ihren expliziten
+                     			Wunsch hin oder automatisch erstellt wurden.
+                     		
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p>Überlege, ob Benutzer das automatische Speichern von Änderungen in der jeweiligen
+                     			Nutzungssituation wünschen.
+                     		
+                  </p>
+                  		
+                  <p>Kläre, ob die automatische Speicherung in regelmäßigen zeitlichen Abständen oder nach
+                     			Ausführung bestimmter Aktionen erfolgen soll. Auch eine Kombination beider Ansätze
+                     ist möglich.
+                     		
+                  </p>
+                  		
+                  <p>Identifiziere ggf. Aktionen, die zu Änderungen führen, die automatisch gespeichert
+                     werden
+                     			sollen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Automatisches Speichern
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Autosave-Strategie</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><br></br><div class="spec-template-description">Vorgabe der Autosave-Strategie: Festlegung der automatisch zu speichernden Daten und
+                              				ggf. des Speicherintervalls.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Beim Verfassen einer E-Mail speichert das System diese automatisch alle 5 sec als
+                              				Entwurf.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Funktionen</strong>
+                        					(Use Cases) für den Einsatz des Usability Patterns „
+                        					Automatisches Speichern
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Funktion</span><span class="spec-template-name">Automatisches Speichern</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Use Case zur automatischen Speicherung (bei Speicherung in regelmäßigen Abständen).
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Hauptakteur im Use Case ist ein Zeitgeber/Timer, der den Use Case in regelmäßigen
+                              				zeitlichen Abständen initiiert.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Automatisches Speichern
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Ablauf
+                              				</span><span class="spec-template-name">Autosave</span><br></br><div class="spec-template-description">Das System soll Änderungen während dieses Ablaufs automatisch speichern.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Intervall</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Angabe des Zeitintervalls, nach dem das System Änderungen jeweils automatisch
+                                 					speichern soll.
+                                 				
+                              </div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Das System soll Änderungen während dieses Ablaufs alle 60 sec automatisch speichern.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Autosave nach Schritt</span><br></br><div class="spec-template-description">Das System soll Änderungen nach diesem Schritt einmalig automatisch speichern.
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:24.976+02:00
+      </div>
+   </body>
+</html>

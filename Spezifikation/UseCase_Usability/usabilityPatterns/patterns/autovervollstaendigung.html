@@ -1,0 +1,282 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:up="http://iste.uni-stuttgart.de/se/up/UsabilityPattern">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>Auto-Vervollständigung</title>
+      <link href="../styles/styles.css" rel="stylesheet" type="text/css"></link>
+      <link href="../js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen"></link><script type="text/javascript" src="../js/jquery-1.4.3.min.js"></script><script type="text/javascript" src="../js/fancybox/jquery.fancybox-1.3.4.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.easing-1.3.pack.js"></script><script type="text/javascript" src="../js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script type="text/javascript" src="../js/scripts.js"></script></head>
+   <body>
+      <div id="nav"><a href="../index.html">← Zur Übersicht</a></div>
+      <div id="header">
+         <h1>Auto-Vervollständigung</h1>
+      </div>
+      <div id="content">
+         <table class="pattern-table">
+            <tr>
+               <th>Usability Pattern</th>
+               <td><strong>Auto-Vervollständigung</strong></td>
+            </tr>
+            <tr>
+               <th>Alias</th>
+               <td><em>Auto-Completion</em></td>
+            </tr>
+            <tr>
+               <th>Problem</th>
+               <td>Benutzer möchten Eingabewerte frei eingeben, die aus einer großen Menge möglicher
+                  		Eingabewerte stammen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Lösung</th>
+               <td>
+                  		
+                  <p>
+                     			<strong>Schlage Benutzern während der Eingabe mögliche geeignete Eingabewerte vor.</strong>
+                     		
+                  </p>
+                  		
+                  <p>Lasse Benutzer den Eingabewert zunächst frei eingeben. Zeige während der Eingabe automatisch
+                     			Vorschläge für mögliche Eingabewerte an, die die bisherige Eingabe vervollständigen
+                     (z.&nbsp;B. durch
+                     			Einblendung neben oder unterhalb des Eingabefelds).
+                     		
+                  </p>
+                  		
+                  <p>Die vorgeschlagenen Werte sollten zum bisher eingegebenen Wert passen bzw. diesen
+                     			vervollständigen. Auch Eingabewerte aus früheren Eingabeschritten (Eingabehistorie)
+                     sind ggf.
+                     			sinnvolle Vorschläge. Die Vorschläge sollten dabei je nach Aufgabenstellung geeignet
+                     sortiert
+                     			werden, so dass z.&nbsp;B. die als am wahrscheinlichsten angenommenen Vorschläge oben
+                     in einer
+                     			Vorschlagsliste erscheinen. Vorgeschlagene Werte müssen in jedem Fall gültige Eingabewerte
+                     sein.
+                     		
+                  </p>
+                  		
+                  <p>Erlaube Benutzern, einen der Vorschläge direkt als Eingabewert zu übernehmen.</p>
+                  		
+                  <p>Wenn das System auch frühere Eingabewerte vorschlägt, erlaube Benutzern, die Eingabehistorie
+                     zu
+                     			löschen.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Illustration</th>
+               <td>Eine Internet-Suchmaschine erlaubt Benutzern, Suchbegriffe frei einzugeben. Bereits
+                  		während der Eingabe werden mögliche Vervollständigungen des bisherigen Eingabewerts
+                  eingeblendet,
+                  		also Suchbegriffe, die eine große Zahl von Treffern versprechen.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  												Beispiele
+                  											
+               </th>
+               <td>
+                  <p><em>Apple Safari 5 (Web-Browser): Suche</em></p>
+                  <p>Benutzer können in Safari über ein separates Suchfeld Suchbegriffe für eine
+                     			Internet-Suche eingeben. Safari blendet dabei automatisch Vervollständigungen der
+                     Eingabe ein;
+                     			zusätzlich werden auch die vom Benutzer zuletzt gesuchten Suchbegriffe vorgeschlagen
+                     (im Bild
+                     			unten als „Letze Sucheinträge“). Benutzer können einen der vorgeschlagenen Suchbegriffe
+                     auswählen
+                     			oder den gewünschten Suchbegriff weiter manuell eingeben.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/autovervollstaendigung-safari.png" title="Automatische Vervollständigung von Suchbegriffen in Safari"><img src="../img/autovervollstaendigung-safari.png" width="100%" alt="Automatische Vervollständigung von Suchbegriffen in Safari"></img></a><br></br>Automatische Vervollständigung von Suchbegriffen in Safari
+                  </div><br style="clear:both;"></br><p><em>Eclipse Java IDE: Automatische Vervollständigung von Java-Anweisungen </em></p>
+                  <p>Die Entwicklungsumgebung Eclipse bietet Benutzern eine automatische Vervollständigung
+                     			von Anweisungen im Java-Quellcode. Dabei zeigt Eclipse mögliche Ergänzungen der
+                     bisherigen
+                     			Eingabe in einer Liste an, entweder auf expliziten Benutzerwunsch (Tastenkombination)
+                     oder
+                     			automatisch nach einer kurzen Wartezeit. Benutzer können einen Vorschlag auswählen
+                     und die
+                     			bisherige Eingabe so ergänzen. Die Vorschläge sind kontextabhängig, Eclipse schlägt
+                     nur zulässige
+                     			Ergänzungen vor. Ergänzen Benutzer ihre Eingabe manuell (durch weiteres Eintippen),
+                     aktualisiert
+                     			Eclipse die Vorschlagsliste automatisch.
+                     		
+                  </p>
+                  <div class="example-image"><a class="resizable-images" rel="example-image-group" href="../img/autovervollstaendigung-eclipse.png" title="Vorschläge für die automatische Quellcode-Vervollständigung in Eclipse"><img src="../img/autovervollstaendigung-eclipse.png" width="100%" alt="Quellcode-Vervollständigung in Eclipse"></img></a><br></br>Quellcode-Vervollständigung in Eclipse
+                  </div><br style="clear:both;"></br></td>
+            </tr>
+            <tr>
+               <th>Nutzungskontext</th>
+               <td>
+                  		
+                  <ul>
+                     			
+                     <li>Freitext-Eingaben, bei denen partielle Eingabewerte vom System durch sinnvolle Vorschläge
+                        				vervollständigt werden können
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Begründung</th>
+               <td>Benutzer können dank Auto-Vervollständigung die gewünschten Eingabewerte auswählen,
+                  		anstatt sie vollständig einzugeben. Sie können somit effizienter mit dem System
+                  arbeiten. Da zudem
+                  		sinnvolle oder häufig verwendete gültige Eingabewerte vorgeschlagen und angezeigt
+                  werden, machen
+                  		Benutzer weniger unerwünschte oder fehlerhafte Eingaben.
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th>Risiken, Nachteile, Kosten</th>
+               <td>
+                  		
+                  <p>Jede Form der Vervollständigung benötigt Rechenzeit. Die Auto-Vervollständigung von
+                     			Eingabewerten kann deshalb zu für den Benutzer spürbaren und somit unerwünschten
+                     Verzögerungen
+                     			bei der Eingabe führen.
+                     		
+                  </p>
+                  		
+                  <p>Benutzer können den Eindruck gewinnen, dass sie nur aus den vorgeschlagenen Eingabewerten
+                     			auswählen können, obwohl auch eine freie Eingabe zulässig ist.
+                     		
+                  </p>
+                  		
+                  <p>Die Vorschläge müssen der Aufgabe angemessen und sinnvoll sortiert sein; unbrauchbare
+                     			Vorschläge können Benutzer bei der Arbeit stören oder verärgern.
+                     		
+                  </p>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungserhebung</th>
+               <td>
+                  		
+                  <p> Identifiziere Eingaben, die automatisch vervollständigt werden können.</p>
+                  		
+                  <ul>
+                     			
+                     <li>Welche Vorschläge sind in einer typischen Nutzungssituation sinnvoll?</li>
+                     			
+                     <li>Existieren Klassen von Eingaben, die im System mehrfach vorkommen und bei denen ein
+                        				einheitliches Verhalten der Auto-Vervollständigung gewünscht ist (z.&nbsp;B. Eingabe
+                        von Personen
+                        				oder E-Mail-Adressen)?
+                        			
+                     </li>
+                     		
+                  </ul>
+                  	
+               </td>
+            </tr>
+            <tr>
+               <th class="implementation">Anforderungsspezifikation</th>
+               <td class="implementation">
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Vorgaben</strong>
+                        					für den Einsatz des Usability Patterns „
+                        					Auto-Vervollständigung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Darstellung</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Darstellung der Vorschläge für die Auto-Vervollständigung.</div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Darstellung der Vorschläge als Auswahlliste
+                              					“
+                              				
+                           </div>
+                        </li>
+                        <li><span class="spec-template-marker">Vorgabe</span><span class="spec-template-name">Auslöser</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Vorgabe des Auslösers (Triggers) für Eingabevorschläge, also z.B. eine kurze
+                              				Zeitspanne, die der Benutzer wartet, oder eine bestimmte Tastenkombination.
+                              			
+                           </div>
+                           <div class="spec-template-example">
+                              					Beispiel: „
+                              					Das System soll Eingabevorschläge machen, sobald der Benutzer 0,5 Sekunden lang seine
+                              				Eingabe nicht ergänzt hat.
+                              			
+                              					“
+                              				
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere
+                        					<strong>globale Funktionen</strong>
+                        					(Use Cases) für den Einsatz des Usability Patterns „
+                        					Auto-Vervollständigung
+                        					“:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Funktion</span><span class="spec-template-name">Eingabehistorie verwalten</span><span class="spec-template-marker spec-template-use-optional">Optional</span><br></br><div class="spec-template-description">Use Case, mit dem Benutzer die Eingabehistorie verwalten (z. B. löschen) können,
+                              				wenn diese vom System für die Auto-Vervollständigung von Eingaben gespeichert
+                              wird
+                              			
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="spec-template-type">
+                     <p>
+                        					Spezifiziere, für welche Interaktionen das Usability Pattern „
+                        					Auto-Vervollständigung
+                        					“ eingesetzt wird. Annotiere und ergänze dazu vorhandene
+                        					<strong>Use Cases</strong>
+                        					:
+                        				
+                     </p>
+                     <ul class="spec-template-list">
+                        <li><span class="spec-template-marker">Annotation</span><span class="spec-template-marker spec-template-annotation-target">
+                              				@
+                              				
+                              					Schritt
+                              				</span><span class="spec-template-name">Auto-Vervollständigung</span><br></br><div class="spec-template-description">Das System soll dem Benutzer bei diesem Eingabeschritt automatisch eine
+                              				Vervollständigung des Eingabewerts anbieten.
+                              			
+                           </div>
+                           <div class="spec-template-parameters"><span class="spec-template-marker">Parameter</span><span class="spec-template-name">Vorschläge</span><span class="spec-template-marker spec-template-use-required">Benötigt</span><div class="spec-template-description">Art und Quelle der Vervollständigungsvorschläge, Sortierung, Anzahl</div>
+                              <div class="spec-template-example">
+                                 					Beispiel: „
+                                 					Liste der bisher verwendeten WWW-Adressen, die den eingegeben Text enthalten.
+                                 					Absteigend sortiert nach Zugriffsdatum, max. 12 Adressen.
+                                 				
+                                 					“
+                                 				
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="footer">
+         						Version:
+         						1.1
+         						– Autor:
+         						Holger Röder<br></br>
+         						Generierungsdatum:
+         						2011-10-28T10:27:24.988+02:00
+      </div>
+   </body>
+</html>
